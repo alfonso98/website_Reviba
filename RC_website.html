@@ -3,14 +3,470 @@
     
     <head>
         <link rel="stylesheet" href="customStyles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
     </head>
 
-    <body>
-        <h1>
-            Hola Mundo
-        </h1>
-        <h2>
-            Página Reviba Consultores
-        </h2>
+    <body >
+
+        <header>
+            
+            <img
+                src="./src/logoBlanco.png"
+                alt="Logo Reviba Consultores"
+                role="button"
+                onClick="topFunction()"
+                />
+            
+            <nav>
+                <ul>
+                    <li>
+                        <a id="headerLinkToS1" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li>
+                        <a id="headerLinkToS2" href="#productoEstrella">Asesoria Comercial</a>
+                    </li>
+                    <li>
+                        <a id="headerLinkToS3" href="#serviciosV1">Servicios</a>
+                    </li>
+                    <li>
+                        <a id="headerLinkToS4" href="#serviciosV2">Mercado</a>
+                    </li>
+                    <li>
+                        <a id="headerLinkToS5" href="#diferenciador">Diferenciador</a>
+                    </li>
+                    <li>
+                        <a id="headerLinkToS6" href="#contactoFooter">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            
+            <div class="colorGradient1">
+
+            <section id="home">
+
+                <h1>
+                    EMBRACE THE POWER <br/>OF <span class="whiteText">REINVENTION</span>
+                </h1>
+
+                <span class="coverActions">
+                    <p>
+                        El mejor consejo es nuestra consultoria
+                    </p>
+                    <button class="actionCallButton">
+                        Contáctanos
+                    </button>
+                </span>
+
+                <span class="coverImg">
+                    <img src="./src/portada.jpg" alt="Foto de portada"/>
+                </span>
+
+            </section>
+            
+            <section id="nosotros">
+
+                <span id="nosotrosTxt">
+                    <h2>
+                        ¿QUIENES SOMOS?
+                    </h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                    </p>
+                </span>
+                
+                <span id="socios">
+
+                    <span class="tarjetaSocio">
+                        <span class="nombreSocio">Daniel <span class="blueText">Re</span>yes</span>
+                        <img class="fotoSocio" src="./src/socio1.jpg" alt="Foto de perfil de Daniel Reyes" />
+                        <span class="tituloSocio">
+                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            Socio Reviba
+                        </span>
+                    </span>
+
+                    <span class="tarjetaSocio">
+                        <span class="nombreSocio">Antonio <span class="blueText">Vi</span>vanco</span>
+                        <img class="fotoSocio" src="./src/socio2.jpg" alt="Foto de perfil de Antonio Vivanco" />
+                        <span class="tituloSocio">
+                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            Socio Reviba
+                        </span>
+                    </span>
+
+                    <span class="tarjetaSocio">
+                        <span class="nombreSocio">Hector <span class="blueText">Ba</span>rillas</span>
+                        <img class="fotoSocio" src="./src/socio3.jpg" alt="Foto de perfil de Hector Barillas" />
+                        <span class="tituloSocio">
+                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            Socio Reviba
+                        </span>
+                    </span>
+                    
+                </span>
+
+            </section>
+
+            </div>
+            
+            <section id="misionVisionValores">
+
+                <span id="misionTxt" class="textMVV">
+                    <h2>Misión</h2>
+                    <p>Lorem ipsum dolor sit amet, lacks kkqjq consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </span>
+
+                <img id="misionImg" class="imgMVV" src="./src/mision.jpg"/>
+
+                <span id="visionTxt" class="textMVV">
+                    <h2>Visión</h2>
+                    <p>Lorem ipsum dolor sit amet, lacks kkqjq consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </span>
+
+                <img id="visionImg" class="imgMVV" src="./src/vision.jpg"/>
+
+                <span id="valoresTxt" class="textMVV">
+                    <h2>Valores</h2>
+                    <p>Lorem ipsum dolor sit amet, lacks kkqjq consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
+                </span>
+
+                <img id="valoresImg" class="imgMVV" src="./src/valores.jpg"/>
+
+                <span id="resumenMVV">
+                    <p>
+                    Lorem ipsum dolor sit amet, lacks kkqjq consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa.
+                    </p>
+                </span>
+
+            </section>
+
+            <section id="queHacemos">
+
+                <span class="tituloDeSeccion">
+                    ¿Qué hacemos?<br/>
+                    ¿Cómo lo hacemos?
+                </span>
+                
+                <p id="primeroTxtQH" class="textoDeSeccion">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </p>
+
+                <p id="segundoTxtQH" class="textoDeSeccion">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                </p>
+
+                <p id="terceroTxtQH" class="textoDeSeccion">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ther.
+                </p>
+
+            </section>
+
+            <section id="productoEstrella">
+
+                <span id="descripcionPE">
+
+                    <span id="seccionAsesoriaComercial" class="tituloDeSeccion">
+                        Asesoria Comercial
+                    </span>
+
+                    <span>
+                        <button class="actionCallButton">
+                            Cotiza
+                        </button>
+                    </span>
+
+                    <p class="textoDeSeccion">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+                    </p>
+
+                    <p class="textoDeSeccion">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    </p>
+
+                    <p class="textoDeSeccion">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
+                    </p>
+                    
+                </span>
+
+                <span id="imagenPE">
+                    <img src="./src/valores.jpg" />
+                </span>
+
+                <span id="conclusionPE">
+                    <p class="textoDeSeccion">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                    </p>
+                </span>
+
+            </section>
+
+            <section id="serviciosV1">
+
+                <span class="serviciosIntro">
+
+                    <span class="tituloDeSeccion">
+                        Conoce nuestros servicios
+                    </span>
+
+                    <p class="textoDeSeccion">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
+                    </p>
+
+                </span>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 1
+                    </span>
+                </div>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 2
+                    </span>
+                </div>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 3
+                    </span>
+                </div>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 4
+                    </span>
+                </div>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 5
+                    </span>
+                </div>
+
+                <div class="tarjetaServicio1">
+                    <img src="./src/servicios.png" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 6
+                    </span>
+                </div>
+
+            </section>
+
+            <section id="serviciosV2">
+
+                <span class="tituloDeSeccion">
+                    ¿Que servicios tenemos para ofrecerte?
+                </span>
+
+                <div id="imagenServicio1" class="tarjetaServicio1">
+                    <img src="./src/servicio1.jpg" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 1
+                    </span>
+                </div>
+
+                <div id="imagenServicio2" class="tarjetaServicio1">
+                    <img src="./src/servicio2.jpg" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 2
+                    </span>
+                </div>
+
+                <div id="imagenServicio3" class="tarjetaServicio1">
+                    <img src="./src/servicio3.jpg" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 3
+                    </span>
+                </div>
+
+                <div id="imagenServicio4" class="tarjetaServicio1">
+                    <img src="./src/servicio4.jpg" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 4
+                    </span>
+                </div>
+
+                <div id="imagenServicio5" class="tarjetaServicio1">
+                    <img src="./src/valores.jpg" alt="servicio">
+                    <div class="tarjetaServicioTitulo"></div>
+                    <span class="tarjetaServicioTxt">
+                        Servicio 5
+                    </span>
+                </div>
+
+                <p id="serviciosV2texto1" class="textoDeSeccion">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                </p>
+
+                <div id="serviciosV2boton">
+                    <button class="actionCallButton">
+                        Contáctanos
+                    </button>
+                </div>
+
+                <p id="serviciosV2texto2" class="textoDeSeccion">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                    <br/>
+                    <br/>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.
+                </p>
+                
+            </section>
+
+            <!-- <section id="mercado">
+                <h2>
+                    Mercado
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut accusamus facilis earum optio molestias recusandae reiciendis. Sapiente ratione atque ducimus eius, temporibus incidunt inventore voluptas maiores molestiae. Temporibus, repellendus praesentium.
+                </p>
+            </section> -->
+
+            <section id="diferenciador">
+
+                <span class="tituloDeSeccion">
+                    ¿Por qué Reviba?
+                </span>
+
+                <div id="diferenciadorTarjeta1" class="tarjetaDiferenciador">
+
+                    <img src="./src/diferenciador1.jpg">
+
+                    <div class="textoTarjetaDiferenciador">
+                        <p>Lorem ipsum dolor</p>
+                        <h3>Diferenciador</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime vitae harum libero cumque sapiente odio hic exercitationem.</p>
+                    </div>
+
+                </div>
+
+                <div id="diferenciadorTarjeta2" class="tarjetaDiferenciador">
+
+                    <img src="./src/diferenciador2.jpg">
+
+                    <div class="textoTarjetaDiferenciador">
+                        <p>Lorem ipsum dolor</p>
+                        <h3>Diferenciador 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil</p>
+                    </div>
+
+                </div>
+
+                <div id="diferenciadorTarjeta3" class="tarjetaDiferenciador">
+
+                    <img src="./src/diferenciador3.jpg">
+
+                    <div class="textoTarjetaDiferenciador">
+                        <p>Lorem ipsum dolor</p>
+                        <h3>Diferenciador 2</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="ultimaLlamada">
+
+                <div id="ultimaLlamadaTxt1" class="ultimaLlamadaTarjetaTxt">
+                    <p>Lorem ipsum dolor</p>
+                    <h3>Diferenciador 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime</p>
+                </div>
+
+                <div id="ultimaLlamadaBtn">
+                    <button class="actionCallButton">
+                        Contáctanos
+                    </button>
+                </div>
+
+                <div id="ultimaLlamadaMain">
+
+                    <div id="ultimaLlamadaMainTxt" class="ultimaLlamadaTarjetaTxt">
+                        <p>Lorem ipsum dolor</p>
+                        <h3>Diferenciador 2</h3>
+                    </div>
+
+                    <img src="./src/diferenciador3.jpg" alt="main image text">
+
+                </div>
+
+                <div id="ultimaLlamadaTxt2" class="ultimaLlamadaTarjetaTxt">
+                    <p>Lorem ipsum dolor</p>
+                    <h3>Diferenciador 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime</p>
+                </div>
+
+
+
+            </section>
+
+        </main>
+
+        <footer id="contactoFooter">
+
+            <span id="footerLogo">
+
+                <img src="./src/logoBlancoCompleto.png" alt="Logo completo: Reviba Embrace the power of reinvention">
+
+            </span>  
+
+            <span id="textoFooter1">
+
+                <h4>
+                    México
+                </h4>
+
+                <a href="tel:5529540553">55 3982 0414</a>
+
+                <a href="mailto:email@example.com"> Reviba@consultores.com </a>
+
+            </span>
+
+            <span id="textoFooter2">
+                <p><u>Terminos y Condiciones</u></p>
+            </span>
+
+            <span id="redesSociales">
+                <a href="#"><img src="./src/iconoFacebook.png" alt="Icono de Facebook"/></a>
+                <a href="#"><img src="./src/iconoLinkedin.png" alt="Icono de LinkedIn"/></a>
+                <a href="#"><img src="./src/iconoTwitter.png" alt="Icono de Twitter"/></a>
+            </span>
+
+        </footer>
+
+        <script>            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+        
     </body>
 </html>

@@ -1,3 +1,678 @@
-h1{
-    color: blue;
+html, body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 10px;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+header {
+    background: #0977B4 0% 0% no-repeat padding-box;
+    opacity: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 7.5rem;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    z-index: 5;
+}
+
+header img {
+    height: 5.5rem;
+    margin-left: 4rem;
+    cursor: pointer;
+}
+
+header * {
+    display: inline;
+    font-size: 2.5rem;
+}
+
+header li {
+    margin: 2.5rem;
+}
+
+header li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #033E88;
+    font-weight: 600;
+}
+
+section {
+    height: 90vh;
+    padding-top: 8vh;
+    padding-left: 16vw;
+    padding-right: 16vw;
+    padding-bottom: 2vh;
+}
+
+.colorGradient1{
+    margin-top: 7.5rem;
+    background: transparent linear-gradient(180deg, #0977B4 0%, #FFFFFF 80%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+
+.whiteText { color: #fff;}
+
+.blueText { color: #0099DA}
+
+.actionCallButton {
+    background: #11B4D7 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    border: none;
+    padding: 1.6rem 2rem;
+    text-align: left;
+    font: normal normal 600 4.1rem/4.9rem Figtree;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#home {
+    padding-top: 1vh;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-template-rows: 30vh 20vh 40vh;
+}
+
+#home h1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    font-size: 6rem;
+    font-weight: 900;
+    /* font: normal normal 900 70px/84px Figtree */
+}
+
+.coverActions {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.coverActions p {
+    font-size: 3rem;
+}
+
+.coverImg {
+    grid-column: 2/3;
+    grid-row: 1/ span 3;
+    padding-top: 5vh;
+    display: flex;
+    justify-content: right;
+}
+
+.coverImg img {
+    width: 95%;
+    object-fit: cover;
+    object-position: center right;
+    border-radius: 10px;
+}
+
+#nosotros {
+    padding-left: 16vh;
+    padding-right: 16vh;
+    display: grid;
+    grid-template: 40% 60% / 1fr;
+}
+
+#nosotrosTxt {
+    grid-column: 1;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#nosotrosTxt h2 {
+    text-align: center;
+    font: italic normal bold 8rem/9.6rem Figtree;
+    margin: 2rem 0rem;
+}
+
+#nosotrosTxt p {
+    text-align: center;
+    font: normal normal normal 2.0rem/2.4rem Figtree;
+}
+
+#socios {
+    grid-column: 1;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tarjetaSocio {
+    width: 35rem;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.nombreSocio {
+    font: normal normal bold 4rem/5rem Figtree;
+    text-align: center;
+}
+
+.fotoSocio {
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 1rem;
+    padding-top: 0.5rem;
+    align-self: center;
+}
+
+.tituloSocio {
+    padding-left: 4.5rem;
+    padding-top: 1rem;
+    font: normal normal normal 2.5rem/3rem Figtree;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.tituloSocio img {
+    height: 30px;
+    width: 30px;
+    padding-right: 1.5rem;
+}
+
+#misionVisionValores {
+    background-color: #1F1F1F;
+    padding: 0vh 0vh 0vh 0vh;
+    display: grid;
+    grid-template: 30% 30% 30% 10% / 1fr 2fr 2fr 1fr;
+}
+
+.textMVV {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: #fff;
+    padding-right: 1.5rem;
+}
+
+.textMVV h2 {
+    font: italic normal bold 4.3rem/5rem Figtree;
+    margin-bottom: 0px;
+}
+
+.textMVV p {
+    font: italic normal normal 2rem/3rem Figtree;
+    letter-spacing: 1.5px;
+}
+
+.imgMVV {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 35%;
+}
+
+#misionTxt {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#misionImg {
+    grid-row: 1;
+    grid-column: 3/5;
+}
+
+#visionTxt {
+    grid-row: 2;
+    grid-column: 3;
+    padding-left: 2.5rem;
+}
+
+#visionImg {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+#valoresTxt {
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#valoresImg {
+    grid-row: 3;
+    grid-column: 3/5;
+}
+
+#resumenMVV {
+    grid-row: 4;
+    grid-column: 1/5;
+    padding-left: 35rem;
+    padding-right: 35rem;
+    background-color: #fff;
+}
+
+#resumenMVV p {
+    text-align: center;
+    font: normal normal normal 2.0rem/2.4rem Figtree;
+    letter-spacing: 1.4px;
+}
+
+.tituloDeSeccion {
+    text-align: left;
+    font: italic normal bold 4rem/5rem Figtree;
+}
+
+.textoDeSeccion {
+    text-align: left;
+    font: normal normal normal 2rem/3rem Figtree;
+    padding: 0rem 1.5rem;
+}
+
+#queHacemos {
+    margin-top: 2rem;
+    height: 65vh;
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr 1fr;
+    padding-bottom: 3vh;
+}
+
+#queHacemos .tituloDeSeccion {
+    grid-row: 1/3;
+    grid-column: 1;
+    padding-right: 1rem;
+}
+
+#primeroTxtQH {
+    grid-row: 1/3;
+    grid-column: 2;
+    border-right: 2px solid #1F1F1F;
+    border-left: 2px solid #1F1F1F;
+}
+
+#segundoTxtQH {
+    grid-row: 1;
+    grid-column: 3;
+}
+
+#terceroTxtQH {
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#productoEstrella {
+    height: 100vh;
+    padding-top: 0vh;
+    display: grid;
+    grid-template: 90% 10% / 1fr 1fr;
+}
+
+#descripcionPE {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+}
+
+#descripcionPE .tituloDeSeccion {
+    padding-top: 10rem;
+}
+
+#descripcionPE .actionCallButton {
+    margin-top: 1.5rem;
+    padding: 1.6rem 9.5rem;
+    margin-bottom: 3.5rem;
+}
+
+#imagenPE {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#imagenPE img {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1rem;
+}
+
+#conclusionPE {
+    grid-row: 2;
+    grid-column: 1/3;
+}
+
+#serviciosV1 {
+    display: grid;
+    grid-template: 30% 35% 35% / 1fr 1fr 1fr;
+}
+
+#serviciosV1 .serviciosIntro {
+    grid-column: 1/4;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#serviciosV1 .textoDeSeccion {
+    padding-left: 0rem;
+}
+
+.tarjetaServicio1 {
+    position: relative;
+    color: white;
+    border-radius: 0.5rem;
+    width: 85%;
+    height: 85%;
+}
+
+.tarjetaServicio1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+.tarjetaServicioTitulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent linear-gradient(179deg, #FFFFFF00 0%, #FFFFFF00 17%, #AAAAAA00 40%, #000000D5 100%) 0% 0% no-repeat padding-box;
+    border-radius: 0.5rem;
+}
+
+.tarjetaServicioTxt {
+    font: normal normal 600 5rem/6rem Figtree;
+    padding: 0.5rem 0rem;
+    position: absolute;
+    bottom: 0.8rem;
+    left: 1.6rem;
+}
+
+#serviciosV2 {
+    height: 150vh;
+    display: grid;
+    grid-template: repeat(6, 1fr) / 1fr 1fr 1fr;
+}
+
+#serviciosV2 .tituloDeSeccion {
+    grid-column: 2/4;
+    grid-row: 1;
+}
+
+#serviciosV2 .tarjetaServicio1 {
+    width: 92%;
+    height: 95%;
+}
+
+#imagenServicio1 {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+
+#imagenServicio2 {
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+#imagenServicio3 {
+    grid-column: 1;
+    grid-row: 3/5;
+}
+
+#imagenServicio4 {
+    grid-column: 2;
+    grid-row: 4/6;
+}
+
+#imagenServicio5 {
+    grid-column: 1;
+    grid-row: 5/7;
+}
+
+#serviciosV2texto1 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+#serviciosV2boton {
+    grid-column: 3;
+    grid-row: 3;
+}
+
+#serviciosV2texto2 {
+    grid-column: 3;
+    grid-row: 4/6;
+}
+
+#diferenciador {
+    display: grid;
+    grid-template: 10% 45% 45% / 45% 55%;
+}
+
+#diferenciador .tituloDeSeccion {
+    margin-top: 2rem;
+    grid-column: 1/3;
+    grid-row: 1;
+}
+
+.tarjetaDiferenciador {
+    border-radius: 5px;
+    margin: 1.5rem 1.5rem;
+    padding: 1.5rem 1.5rem;
+    color: white;
+    font: normal normal normal 1.5rem/2rem Figtree;
+    letter-spacing: 1.5px;
+}
+
+.tarjetaDiferenciador h3 {
+    font: normal normal 600 2rem/3rem Figtree;
+    letter-spacing: 1.89px;
+    margin: 0.5rem 0rem;
+}
+
+#diferenciadorTarjeta1 {
+    grid-column: 1;
+    grid-row: 2/4;
+    background: #7C7C7C 0% 0% no-repeat padding-box;
+}
+
+#diferenciadorTarjeta1 img {
+    width: 100%;
+    height: 40%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+#diferenciadorTarjeta2 {
+    grid-column: 2;
+    grid-row: 2;
+    background: #454545 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+}
+
+#diferenciadorTarjeta2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+#diferenciadorTarjeta3 {
+    grid-column: 2;
+    grid-row: 3;
+    background: #242424 0% 0% no-repeat padding-box;
+    display: flex;
+    flex-direction: row;
+}
+
+#diferenciadorTarjeta3 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+.textoTarjetaDiferenciador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+}
+
+#ultimaLlamada {
+    height: 80vh;
+    display: grid;
+    grid-template: 1fr 3fr 1fr / 1fr 1fr 1fr;
+}
+
+.ultimaLlamadaTarjetaTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1.5rem;
+    font: normal normal normal 2rem/3rem Figtree;
+    letter-spacing: 1.5px;
+}
+
+.ultimaLlamadaTarjetaTxt h3 {
+    font: normal normal 600 27px/33px Figtree;
+    letter-spacing: 1.89px;
+}
+
+#ultimaLlamadaTxt1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#ultimaLlamadaBtn {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#ultimaLlamadaMain {
+    grid-column: 2;
+    grid-row: 1/4;
+    border-right: 2px solid #1F1F1F;
+    border-left: 2px solid #1F1F1F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ultimaLlamadaMainTxt {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#ultimaLlamadaMain img {
+    width: 90%;
+    height: 70%;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+#ultimaLlamadaTxt2 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+footer {
+    width: 100vw;
+    height: 40vh;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #032970 40%, #032970 100%) 0% 0% no-repeat padding-box;
+    display: grid;
+    grid-template: 60% 40% / 1fr 1fr 1fr 1fr 1fr;
+    font: normal normal 300 2.5rem/3rem Figtree;
+    color: #FFFFFF;
+}
+
+#footerLogo {
+    grid-row: 1;
+    grid-column: 2/5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#footerLogo img {
+    height: 20vh;
+    object-fit: cover;
+    object-position: 50% 40%;
+    border-radius: 0.5rem;
+}
+
+#textoFooter1 {
+    grid-row: 2;
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 4rem;
+}
+
+#textoFooter1 h4 {
+    font: normal normal medium 41px/49px Figtree;
+    margin: 1rem 0rem;
+}
+
+#textoFooter1 a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#textoFooter1 a:hover {
+    color: #FFFFFF;
+    font-weight: 600;
+}
+
+#textoFooter2 {
+    grid-row: 2;
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#redesSociales {
+    grid-row: 2;
+    grid-column: 5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
