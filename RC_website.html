@@ -6,43 +6,74 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
     </head>
 
     <body >
 
-        <header>
+        <header id="headerNormal">
             
             <img
-                src="./src/logoBlanco.png"
+                src="./src/logos/logoBlanco.png"
                 alt="Logo Reviba Consultores"
                 role="button"
                 onClick="topFunction()"
-                />
+            />
             
             <nav>
                 <ul>
-                    <li>
-                        <a id="headerLinkToS1" href="#nosotros">Nosotros</a>
+                    <li id="headerLinkToS1">
+                        <a href="#nosotros">Nosotros</a>
                     </li>
-                    <li>
-                        <a id="headerLinkToS2" href="#productoEstrella">Asesoria Comercial</a>
+                    <li id="headerLinkToS2">
+                        <a href="#productoEstrella">Asesoria Comercial</a>
                     </li>
-                    <li>
-                        <a id="headerLinkToS3" href="#serviciosV1">Servicios</a>
+                    <li id="headerLinkToS3">
+                        <a href="#serviciosV1">Servicios</a>
                     </li>
-                    <li>
-                        <a id="headerLinkToS4" href="#serviciosV2">Mercado</a>
+                    <li id="headerLinkToS4">
+                        <a href="#serviciosV2">Mercado</a>
                     </li>
-                    <li>
-                        <a id="headerLinkToS5" href="#diferenciador">Diferenciador</a>
+                    <li id="headerLinkToS5">
+                        <a href="#diferenciador">Diferenciador</a>
                     </li>
-                    <li>
-                        <a id="headerLinkToS6" href="#contactoFooter">Contacto</a>
+                    <li id="headerLinkToS6">
+                        <a href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </nav>
 
         </header>
+
+        <header id="headerMobile">
+
+            <div id="mobileHeaderLogoContainer">
+
+                <img
+                    src="./src/logos/logoBlanco.png"
+                    alt="Logo Reviba Consultores"
+                    role="button"
+                    onClick="topFunction()"
+                />
+
+                <span class="material-symbols-outlined" onclick="openNav()">
+                    menu
+                </span>
+
+            </div>   
+
+        </header>
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#nosotros" onclick="closeNav()">Nosotros</a>
+            <a href="#seccionAsesoriaComercial" onclick="closeNav()">Asesoria Comercial</a>
+            <a href="#serviciosV1" onclick="closeNav()">Servicios</a>
+            <a href="#serviciosV2" onclick="closeNav()">Mercado</a>
+            <a href="#diferenciador" onclick="closeNav()">Diferenciador</a>
+            <a href="#contacto" onclick="closeNav()">Contacto</a>
+        </div>
 
         <main>
             
@@ -84,27 +115,27 @@
 
                     <span class="tarjetaSocio">
                         <span class="nombreSocio">Daniel <span class="blueText">Re</span>yes</span>
-                        <img class="fotoSocio" src="./src/socio1.jpg" alt="Foto de perfil de Daniel Reyes" />
+                        <img class="Daniel Reyes en escala de grises." src="./src/grupoReviba/danielReyes.jpeg" alt="Foto de perfil de Daniel Reyes" />
                         <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
                         </span>
                     </span>
 
                     <span class="tarjetaSocio">
                         <span class="nombreSocio">Antonio <span class="blueText">Vi</span>vanco</span>
-                        <img class="fotoSocio" src="./src/socio2.jpg" alt="Foto de perfil de Antonio Vivanco" />
+                        <img class="Antonio Vivanco en escala de grises" src="./src/grupoReviba/antonioVivanco.jpeg" alt="Foto de perfil de Antonio Vivanco" />
                         <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
                         </span>
                     </span>
 
                     <span class="tarjetaSocio">
                         <span class="nombreSocio">Hector <span class="blueText">Ba</span>rillas</span>
-                        <img class="fotoSocio" src="./src/socio3.jpg" alt="Foto de perfil de Hector Barillas" />
+                        <img class="Hector Barillas en escala de grises" src="./src/grupoReviba/hectorBarillas.jpeg" alt="Foto de perfil de Hector Barillas" />
                         <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
                         </span>
                     </span>
@@ -198,7 +229,7 @@
                 </span>
 
                 <span id="imagenPE">
-                    <img src="./src/valores.jpg" />
+                    <img src="./src/sastre/sastre10.jpg" />
                 </span>
 
                 <span id="conclusionPE">
@@ -224,7 +255,7 @@
                 </span>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio01.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 1
@@ -232,7 +263,7 @@
                 </div>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio02.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 2
@@ -240,7 +271,7 @@
                 </div>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio03.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 3
@@ -248,7 +279,7 @@
                 </div>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio01.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 4
@@ -256,7 +287,7 @@
                 </div>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio02.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 5
@@ -264,7 +295,7 @@
                 </div>
 
                 <div class="tarjetaServicio1">
-                    <img src="./src/servicios.png" alt="servicio">
+                    <img src="./src/servicio03.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 6
@@ -280,7 +311,7 @@
                 </span>
 
                 <div id="imagenServicio1" class="tarjetaServicio1">
-                    <img src="./src/servicio1.jpg" alt="servicio">
+                    <img src="./src/sastre/sastre01.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 1
@@ -288,7 +319,7 @@
                 </div>
 
                 <div id="imagenServicio2" class="tarjetaServicio1">
-                    <img src="./src/servicio2.jpg" alt="servicio">
+                    <img src="./src/sastre/sastre03.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 2
@@ -296,7 +327,7 @@
                 </div>
 
                 <div id="imagenServicio3" class="tarjetaServicio1">
-                    <img src="./src/servicio3.jpg" alt="servicio">
+                    <img src="./src/sastre/sastre05.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 3
@@ -304,7 +335,7 @@
                 </div>
 
                 <div id="imagenServicio4" class="tarjetaServicio1">
-                    <img src="./src/servicio4.jpg" alt="servicio">
+                    <img src="./src/sastre/sastre04.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 4
@@ -312,7 +343,7 @@
                 </div>
 
                 <div id="imagenServicio5" class="tarjetaServicio1">
-                    <img src="./src/valores.jpg" alt="servicio">
+                    <img src="./src/sastre/sastre02.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
                         Servicio 5
@@ -355,7 +386,7 @@
 
                 <div id="diferenciadorTarjeta1" class="tarjetaDiferenciador">
 
-                    <img src="./src/diferenciador1.jpg">
+                    <img src="./src/sastre/sastre09.jpg">
 
                     <div class="textoTarjetaDiferenciador">
                         <p>Lorem ipsum dolor</p>
@@ -367,7 +398,7 @@
 
                 <div id="diferenciadorTarjeta2" class="tarjetaDiferenciador">
 
-                    <img src="./src/diferenciador2.jpg">
+                    <img src="./src/sastre/sastre08.jpg">
 
                     <div class="textoTarjetaDiferenciador">
                         <p>Lorem ipsum dolor</p>
@@ -379,7 +410,7 @@
 
                 <div id="diferenciadorTarjeta3" class="tarjetaDiferenciador">
 
-                    <img src="./src/diferenciador3.jpg">
+                    <img src="./src/sastre/sastre11.jpg">
 
                     <div class="textoTarjetaDiferenciador">
                         <p>Lorem ipsum dolor</p>
@@ -412,7 +443,7 @@
                         <h3>Diferenciador 2</h3>
                     </div>
 
-                    <img src="./src/diferenciador3.jpg" alt="main image text">
+                    <img src="./src/sastre/sastre06.jpg" alt="main image text">
 
                 </div>
 
@@ -428,11 +459,11 @@
 
         </main>
 
-        <footer id="contactoFooter">
+        <footer id="contacto">
 
             <span id="footerLogo">
 
-                <img src="./src/logoBlancoCompleto.png" alt="Logo completo: Reviba Embrace the power of reinvention">
+                <img src="./src/logos/logoBlancoCompleto.png" alt="Logo completo: Reviba Embrace the power of reinvention">
 
             </span>  
 
@@ -453,18 +484,26 @@
             </span>
 
             <span id="redesSociales">
-                <a href="#"><img src="./src/iconoFacebook.png" alt="Icono de Facebook"/></a>
-                <a href="#"><img src="./src/iconoLinkedin.png" alt="Icono de LinkedIn"/></a>
-                <a href="#"><img src="./src/iconoTwitter.png" alt="Icono de Twitter"/></a>
+                <a href="#"><img src="./src/iconos/iconoFacebook.png" alt="Icono de Facebook"/></a>
+                <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="Icono de LinkedIn"/></a>
+                <a href="#"><img src="./src/iconos/iconoTwitter.png" alt="Icono de Twitter"/></a>
             </span>
 
         </footer>
 
-        <script>            
-            // When the user clicks on the button, scroll to the top of the document
+        <script>
+     
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
+            }
+
+            function openNav() {
+                document.getElementById("mySidebar").style.width = "250px";
+            }
+
+            function closeNav() {
+                document.getElementById("mySidebar").style.width = "0";
             }
         </script>
         
