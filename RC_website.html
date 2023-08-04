@@ -7,10 +7,10 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-        <meta name="viewport" content="width=device-width; initial-scale=1.0;">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 
-    <body >
+    <body>
 
         <header id="headerNormal">
             
@@ -44,6 +44,18 @@
                 </ul>
             </nav>
 
+            <div class="controles">
+
+                <span class="controlesIdioma">
+                    <p class="idiomaEsp" onClick="changeToEng()" ><b>Es</b>/En</p>
+                    <p class="idiomaEng" onClick="changeToEsp()">Es/<b>En</b></p>
+                </span>
+
+                <img class="modoLuz" onClick="changeToDark()" src="./src/iconos/iconoSol.png"/>
+                <img class="modoOscuro" onClick="changeToLight()" src="./src/iconos/iconoLuna.png"/>
+
+            </div>
+
         </header>
 
         <header id="headerMobile">
@@ -57,7 +69,7 @@
                     onClick="topFunction()"
                 />
 
-                <span class="material-symbols-outlined" onclick="openNav()">
+                <span class="material-symbols-outlined" onClick="openNav()">
                     menu
                 </span>
 
@@ -66,6 +78,19 @@
         </header>
 
         <div id="mySidebar" class="sidebar">
+
+            <div class="controles">
+
+                <img class="modoLuz" onClick="changeToDark()" src="./src/iconos/iconoSol.png"/>
+                <img class="modoOscuro" onClick="changeToLight()" src="./src/iconos/iconoLuna.png"/>
+                
+                <span class="controlesIdioma">
+                    <p class="idiomaEsp" onClick="changeToEng()" ><b>Es</b>/En</p>
+                    <p class="idiomaEng" onClick="changeToEsp()">Es/<b>En</b></p>
+                </span>
+
+            </div>
+
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="#nosotros" onclick="closeNav()">Nosotros</a>
             <a href="#seccionAsesoriaComercial" onclick="closeNav()">Asesoria Comercial</a>
@@ -81,9 +106,18 @@
 
             <section id="home">
 
-                <h1>
-                    EMBRACE THE POWER <br/>OF <span class="whiteText">REINVENTION</span>
-                </h1>
+                <span class="bienvenida">
+
+                    <img src="./src/logos/logoColorMedio.png"/>
+
+                    <h1>
+                        EMBRACE THE POWER OF <br/>
+                        <span class="whiteText">
+                            <span class="accentBlueTwo">RE</span>INVENTION
+                        </span>
+                    </h1>
+
+                </span>
 
                 <span class="coverActions">
                     <p>
@@ -114,8 +148,8 @@
                 <span id="socios">
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Daniel <span class="blueText">Re</span>yes</span>
-                        <img class="Daniel Reyes en escala de grises." src="./src/grupoReviba/danielReyes.jpeg" alt="Foto de perfil de Daniel Reyes" />
+                        <span class="nombreSocio">Daniel <span class="accentBlueOne">Re</span>yes</span>
+                        <img class="fotoSocio" alt="Daniel Reyes en escala de grises." src="./src/grupoReviba/danielReyes.jpeg" alt="Foto de perfil de Daniel Reyes" />
                         <span class="tituloSocio">
                             <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
@@ -123,8 +157,8 @@
                     </span>
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Antonio <span class="blueText">Vi</span>vanco</span>
-                        <img class="Antonio Vivanco en escala de grises" src="./src/grupoReviba/antonioVivanco.jpeg" alt="Foto de perfil de Antonio Vivanco" />
+                        <span class="nombreSocio">Antonio <span class="accentBlueOne">Vi</span>vanco</span>
+                        <img class="fotoSocio" alt="Antonio Vivanco en escala de grises" src="./src/grupoReviba/antonioVivanco.jpeg" alt="Foto de perfil de Antonio Vivanco" />
                         <span class="tituloSocio">
                             <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
@@ -132,8 +166,8 @@
                     </span>
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Hector <span class="blueText">Ba</span>rillas</span>
-                        <img class="Hector Barillas en escala de grises" src="./src/grupoReviba/hectorBarillas.jpeg" alt="Foto de perfil de Hector Barillas" />
+                        <span class="nombreSocio">Hector <span class="accentBlueOne">Ba</span>rillas</span>
+                        <img class="fotoSocio" alt="Hector Barillas en escala de grises" src="./src/grupoReviba/hectorBarillas.jpeg" alt="Foto de perfil de Hector Barillas" />
                         <span class="tituloSocio">
                             <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
                             Socio Reviba
@@ -208,21 +242,21 @@
                         Asesoria Comercial
                     </span>
 
-                    <span>
+                    <span id="PEBoton">
                         <button class="actionCallButton">
                             Cotiza
                         </button>
                     </span>
 
-                    <p class="textoDeSeccion">
+                    <p id="PETexto1" class="textoDeSeccion">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
                     </p>
 
-                    <p class="textoDeSeccion">
+                    <p id="PETexto2" class="textoDeSeccion">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
                     </p>
 
-                    <p class="textoDeSeccion">
+                    <p id="PETexto3" class="textoDeSeccion">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh.
                     </p>
                     
@@ -314,7 +348,7 @@
                     <img src="./src/sastre/sastre01.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
-                        Servicio 1
+                        Paso 1
                     </span>
                 </div>
 
@@ -322,7 +356,7 @@
                     <img src="./src/sastre/sastre03.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
-                        Servicio 2
+                        Paso 2
                     </span>
                 </div>
 
@@ -330,7 +364,7 @@
                     <img src="./src/sastre/sastre05.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
-                        Servicio 3
+                        Paso 3
                     </span>
                 </div>
 
@@ -338,7 +372,7 @@
                     <img src="./src/sastre/sastre04.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
-                        Servicio 4
+                        Paso 4
                     </span>
                 </div>
 
@@ -346,7 +380,7 @@
                     <img src="./src/sastre/sastre02.jpg" alt="servicio">
                     <div class="tarjetaServicioTitulo"></div>
                     <span class="tarjetaServicioTxt">
-                        Servicio 5
+                        Paso 5
                     </span>
                 </div>
 
@@ -386,7 +420,7 @@
 
                 <div id="diferenciadorTarjeta1" class="tarjetaDiferenciador">
 
-                    <img src="./src/sastre/sastre09.jpg">
+                    <img src="./src/sastre/sastre08.jpg">
 
                     <div class="textoTarjetaDiferenciador">
                         <p>Lorem ipsum dolor</p>
@@ -426,7 +460,7 @@
 
                 <div id="ultimaLlamadaTxt1" class="ultimaLlamadaTarjetaTxt">
                     <p>Lorem ipsum dolor</p>
-                    <h3>Diferenciador 2</h3>
+                    <h3>Diferenciador 2-1</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime</p>
                 </div>
 
@@ -440,7 +474,7 @@
 
                     <div id="ultimaLlamadaMainTxt" class="ultimaLlamadaTarjetaTxt">
                         <p>Lorem ipsum dolor</p>
-                        <h3>Diferenciador 2</h3>
+                        <h3>Diferenciador 2-2</h3>
                     </div>
 
                     <img src="./src/sastre/sastre06.jpg" alt="main image text">
@@ -449,7 +483,7 @@
 
                 <div id="ultimaLlamadaTxt2" class="ultimaLlamadaTarjetaTxt">
                     <p>Lorem ipsum dolor</p>
-                    <h3>Diferenciador 2</h3>
+                    <h3>Diferenciador 2-3</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dicta, at animi quasi expedita nisi mollitia fugiat dolor ipsa officiis nihil maxime</p>
                 </div>
 
@@ -491,21 +525,7 @@
 
         </footer>
 
-        <script>
-     
-            function topFunction() {
-                document.body.scrollTop = 0;
-                document.documentElement.scrollTop = 0;
-            }
-
-            function openNav() {
-                document.getElementById("mySidebar").style.width = "250px";
-            }
-
-            function closeNav() {
-                document.getElementById("mySidebar").style.width = "0";
-            }
-        </script>
+        <script type="text/javascript" src="./customFunctionalities.js"></script>
         
     </body>
 </html>

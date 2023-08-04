@@ -1,12 +1,19 @@
+:root {
+    --primary: #000000;
+    --secondary: #FFFFFF;
+    --accentLight: #0099DA;
+    --accentDark: #032970;
+}
+
 html, body {
     font-family: 'Figtree', sans-serif;
     font-size: 10px;
     scroll-behavior: smooth;
-    width: 100%;
-    height: 100%;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    background-color: var(--secondary);
+    color: var(--primary);
 }
 
 header {
@@ -31,11 +38,12 @@ header img {
 
 header * {
     display: inline;
-    font-size: 2.5rem;
+    font-size: 2rem;
+    color: #fff;
 }
 
 header li {
-    margin: 2.5rem;
+    margin: 2rem;
 }
 
 header li a {
@@ -48,12 +56,26 @@ header li a {
 }
 
 li a:hover {
-    color: #033E88;
+    color: var(--accent);
     font-weight: 600;
 }
 
-main {
-    transition: margin-left .5s; /* If you want a transition effect */
+.controles {
+    position: absolute;
+    right: 2dvw;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.idiomaEng {
+    display: none;
+}
+
+.modoOscuro {
+    display: none;
 }
 
 section {
@@ -71,7 +93,7 @@ section {
     z-index: 1;
     top: 7.5rem;
     left: 0;
-    background: transparent linear-gradient(180deg, #0977B4 0%, #1F1F1F 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #0977B4 0%, var(--secondary) 100%) 0% 0% no-repeat padding-box;
     overflow-x: hidden;
     padding-top: 60px;
     transition: 0.5s;
@@ -94,19 +116,40 @@ section {
 .sidebar .closebtn {
     position: absolute;
     top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    right: 2.5rem;
+    font-size: 3.5rem;
+    margin-left: 5rem;
 }
 
-.colorGradient1{
+#mySidebar .controles {
+    position: absolute;
+    top: 0;
+    left: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+#mySidebar .controles img {
+    width: 4.5rem;
+    height: 4.5rem;
+    margin-right: 2rem;
+}
+
+.colorGradient1 {
     margin-top: 7.5rem;
-    background: transparent linear-gradient(180deg, #0977B4 0%, #FFFFFF 80%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #0977B4 0%, var(--secondary) 100%) 0% 0% no-repeat padding-box;
 }
 
-.whiteText { color: #fff;}
+.whiteText { color: #FFFFFF; }
 
-.blueText { color: #0099DA}
+.accentBlueOne { color: var(--accentLight); }
+
+.accentBlueTwo { color: var(--accentDark);}
 
 .actionCallButton {
     background: #11B4D7 0% 0% no-repeat padding-box;
@@ -125,21 +168,36 @@ section {
     padding-left: 4vh;
     padding-right: 4vh;
     display: grid;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 30vh 20vh 40vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 70% 30%;
 }
 
-#home h1 {
+.bienvenida {
+    grid-column: 1;
+    grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.bienvenida img {
+    width: 85%;
+    height: auto;
+    align-self: center;
+}
+
+.bienvenida h1 {
     grid-column: 1/2;
     grid-row: 1/2;
-    font-size: 6rem;
-    font-weight: 900;
-    /* font: normal normal 900 70px/84px Figtree */
+    font: normal normal 900 4rem/5rem Figtree;
+    letter-spacing: 0.48px;
+    text-align: center;
 }
 
 .coverActions {
-    grid-column: 1/2;
-    grid-row: 3/4;
+    grid-column: 1;
+    grid-row: 2;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -147,12 +205,12 @@ section {
 }
 
 .coverActions p {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 .coverImg {
-    grid-column: 2/3;
-    grid-row: 1/ span 3;
+    grid-column: 2;
+    grid-row: 1/3;
     padding-top: 5vh;
     display: flex;
     justify-content: right;
@@ -207,6 +265,7 @@ section {
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
+    color: var(--primary);
 }
 
 .nombreSocio {
@@ -308,7 +367,7 @@ section {
     grid-column: 1/5;
     padding-left: 35rem;
     padding-right: 35rem;
-    background-color: #fff;
+    background-color: var(--secondary);
 }
 
 #resumenMVV p {
@@ -345,8 +404,8 @@ section {
 #primeroTxtQH {
     grid-row: 1/3;
     grid-column: 2;
-    border-right: 2px solid #1F1F1F;
-    border-left: 2px solid #1F1F1F;
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
 }
 
 #segundoTxtQH {
@@ -372,7 +431,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    
 }
 
 #descripcionPE .tituloDeSeccion {
@@ -461,7 +519,7 @@ section {
 #serviciosV2 {
     height: 150vh;
     display: grid;
-    grid-template: repeat(6, 1fr) / 1fr 1fr 1fr;
+    grid-template: repeat(6, 16.6%) / 1fr 1fr 1fr;
 }
 
 #serviciosV2 .tituloDeSeccion {
@@ -507,6 +565,9 @@ section {
 #serviciosV2boton {
     grid-column: 3;
     grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
 }
 
 #serviciosV2texto2 {
@@ -626,8 +687,8 @@ section {
 #ultimaLlamadaMain {
     grid-column: 2;
     grid-row: 1/4;
-    border-right: 2px solid #1F1F1F;
-    border-left: 2px solid #1F1F1F;
+    border-right: 2px solid var(--primary);
+    border-left: 2px solid var(--primary);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -656,7 +717,7 @@ section {
 footer {
     width: 100vw;
     height: 40vh;
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #032970 40%, #032970 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, var(--secondary) 0%, #032970 40%, #032970 100%) 0% 0% no-repeat padding-box;
     display: grid;
     grid-template: 60% 40% / 1fr 1fr 1fr 1fr 1fr;
     font: normal normal 300 2.5rem/3rem Figtree;
@@ -720,12 +781,16 @@ footer {
     justify-content: space-evenly;
 }
 
+.dark {
+    background-color: #1F1F1F;
+    color: #f1f1f1;
+}
 
 /* Tablet Landscape and laptop */
-@media all and (min-width: 1024px) and (max-width: 1300px) {
+@media all and (min-width: 1026px) and (max-width: 1300px) {
 
     html, body {
-        font-size: 8px;
+        font-size: 9px;
     }
 
     section {
@@ -817,10 +882,10 @@ footer {
 }
 
 /* Tablet Portrait */
-@media all and (min-width: 769px) and (max-width: 1023px) {
+@media all and (min-width: 769px) and (max-width: 1025px) {
 
     html, body {
-        font-size: 9px;
+        font-size: 10px;
     }
 
     #headerLinkToS1 {
@@ -970,7 +1035,7 @@ footer {
 @media all and (min-width:1px) and (max-width: 768px) {
 
     html, body {
-        font-size: 7px;
+        font-size: 7px
     }
 
     #headerNormal {
@@ -1006,6 +1071,7 @@ footer {
     }
 
     .material-symbols-outlined {
+        cursor: pointer;
         position: absolute;
         top: 2.5rem;
         left: 2.5rem;
@@ -1017,8 +1083,8 @@ footer {
     }
 
     section {
-        padding-left: 1vw;
-        padding-right: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
         margin-top: 3rem;
     }
 
@@ -1052,7 +1118,7 @@ footer {
     }
     
     #nosotros {
-        height: 170vh;
+        height: 200vh;
         padding-left: 2vw;
         padding-right: 2vw;
         display: grid;
@@ -1064,13 +1130,19 @@ footer {
         grid-row: 1;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
     }
     
     #nosotrosTxt h2 {
         text-align: center;
-        font: italic normal bold 6rem/7.6rem Figtree;
-        margin: 2rem 0rem;
+        font: italic normal bold 5rem/6.5rem Figtree;
+        margin: 0rem 0rem;
+        overflow-x: clip;
+    }
+
+    #nosotrosTxt p {
+        text-align: center;
+        font: normal normal normal 2.5rem/3rem Figtree;
     }
     
     #socios {
@@ -1079,44 +1151,24 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
     }
-    
+
     .tarjetaSocio {
-        width: 40rem;
-        height: 80%;
+        width: 80%;
+        height: 45dvh;
         display: flex;
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
         justify-content: flex-start;
     }
     
-    .fotoSocio {
-        width: 60%;
-        height: 60%;
-        object-fit: cover;
-        object-position: top center;
-        border-radius: 1rem;
-        padding-top: 0.5rem;
-        align-self: center;
-    }
-    
-    .tituloSocio {
-        padding-left: 0rem;
-        padding-top: 1rem;
-        font: normal normal normal 2.5rem/3rem Figtree;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-    
     #misionVisionValores {
-        height: 170vw;
+        height: auto;
         background-color: #1F1F1F;
         padding: 0vh 0vh;
         display: grid;
-        grid-template: 15% 15% 15% 15% 15% 15% 10% / 1fr;
+        grid-template: repeat(7, 1fr) / 1fr;
     }
 
     .textMVV {
@@ -1139,7 +1191,7 @@ footer {
 
     .imgMVV {
         width: 100%;
-        height: 80%;
+        height: 25vh;
         object-fit: cover;
         object-position: 50% 35%;
     }
@@ -1178,8 +1230,8 @@ footer {
     #resumenMVV {
         grid-row: 7;
         grid-column: 1;
-        padding-left: 3rem;
-        padding-right: 3rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         background-color: #fff;
     }
     
@@ -1190,7 +1242,7 @@ footer {
     }
 
     #queHacemos {
-        margin-top: 8vh;
+        margin-top: 0vh;
         height: 80vh;
         display: grid;
         grid-template: 20% 40% 40% / 1fr 1fr;
@@ -1218,27 +1270,51 @@ footer {
         grid-column: 2;
     }
 
-    #descripcionPE .tituloDeSeccion {
-        padding-top: 8rem;
+    #productoEstrella {
+        height: auto;
+        padding-top: 0vh;
+        display: grid;
+        grid-template: 2fr 2fr 1fr / 1fr;
     }
-
-    #imagenPE {
-        grid-column: 2;
+    
+    #descripcionPE {
+        grid-column: 1;
         grid-row: 1;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    #descripcionPE .tituloDeSeccion {
+        padding-top: 1.5rem;
+    }
+    
+    #descripcionPE .actionCallButton {
+        margin-top: 1.5rem;
+        padding: 1.6rem 9.5rem;
+        margin-bottom: 3.5rem;
+    }
+    
+    #imagenPE {
+        grid-column: 1;
+        grid-row: 2;
+        display: flex;
+        flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
     
     #imagenPE img {
-        width: 120%;
-        height: 95%;
+        width: 95%;
+        height: 50vh;
         object-fit: cover;
         object-position: center center;
         border-radius: 1rem;
-        position: relative;
-        right: -4rem;
+    }
+    
+    #conclusionPE {
+        grid-row: 3;
+        grid-column: 1;
     }
 
     #serviciosV1 {
@@ -1268,31 +1344,179 @@ footer {
         margin-left: 2rem;
     }
 
+    .tarjetaServicioTxt {
+        font: normal normal 600 3.5rem/4rem Figtree;
+        padding: 0.5rem 0rem;
+        position: absolute;
+        bottom: 0.8rem;
+        left: 1.6rem;
+    }
+
     #serviciosV2 {
-        display: none;
+        height: 200vh;
+        display: grid;
+        grid-template: repeat(10, 10%) / 1fr 1fr;
     }
     
+    #serviciosV2 .tituloDeSeccion {
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    
+    #serviciosV2 .tarjetaServicio1 {
+        width: 92%;
+        height: 95%;
+    }
+    
+    #imagenServicio1 {
+        grid-column: 1;
+        grid-row: 2/4;
+    }
+    
+    #imagenServicio2 {
+        grid-column: 2;
+        grid-row: 3/5;
+    }
+    
+    #imagenServicio3 {
+        grid-column: 1;
+        grid-row: 6/8;
+    }
+    
+    #imagenServicio4 {
+        grid-column: 2;
+        grid-row: 7/9;
+    }
+    
+    #imagenServicio5 {
+        grid-column: 1;
+        grid-row: 8/10;
+    }
+    
+    #serviciosV2texto1 {
+        grid-column: 1;
+        grid-row: 4/6;
+    }
+    
+    #serviciosV2boton {
+        grid-column: 2;
+        grid-row: 9/11;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    #serviciosV2texto2 {
+        grid-column: 2;
+        grid-row: 5/7;
+    }
+
     #diferenciador {
-        display: none;
+        display: grid;
+        grid-template: 10% 30% 30% 30% / 1fr;
+    }
+    
+    #diferenciador .tituloDeSeccion {
+        margin-top: 0rem;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #diferenciadorTarjeta1 {
+        grid-column: 1;
+        grid-row: 2;
+        background: #7C7C7C 0% 0% no-repeat padding-box;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #diferenciadorTarjeta1 img {
+        width: 40%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 40%;
+        border-radius: 0.5rem;
+    }
+    
+    #diferenciadorTarjeta2 {
+        grid-column: 1;
+        grid-row: 3;
+        background: #454545 0% 0% no-repeat padding-box;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #diferenciadorTarjeta3 {
+        grid-column: 1;
+        grid-row: 4;
+        background: #242424 0% 0% no-repeat padding-box;
+        display: flex;
+        flex-direction: row;
     }
 
     #ultimaLlamada {
-        display: none;
+        height: 150vh;
+        display: grid;
+        grid-template: 2fr 1fr 3fr 2fr / 1fr;
+    }
+    
+    .ultimaLlamadaTarjetaTxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 1.5rem;
+        font: normal normal normal 2rem/3rem Figtree;
+        letter-spacing: 1.5px;
+    }
+    
+    .ultimaLlamadaTarjetaTxt h3 {
+        font: normal normal 600 27px/33px Figtree;
+        letter-spacing: 1.89px;
+    }
+    
+    #ultimaLlamadaTxt1 {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    
+    #ultimaLlamadaBtn {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    
+    #ultimaLlamadaMain {
+        grid-column: 1;
+        grid-row: 3;
+        margin-top: 2rem;
+        border-right: 0px solid #1F1F1F;
+        border-left: 0px solid #1F1F1F;
+        border-top: 2px solid #1F1F1F;
+        border-bottom: 2px solid #1F1F1F;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #ultimaLlamadaTxt2 {
+        grid-column: 1;
+        grid-row: 4;
     }
 
     footer {
         width: 100vw;
-        height: 55vh;
+        height: 60vh;
         background: transparent linear-gradient(180deg, #FFFFFF 0%, #032970 40%, #032970 100%) 0% 0% no-repeat padding-box;
         display: grid;
-        grid-template: 50% 20% 30% / 1fr 1fr;
+        grid-template: 50% 20% 20% 10% / 1fr;
         font: normal normal 300 2.5rem/3rem Figtree;
         color: #FFFFFF;
     }
     
     #footerLogo {
         grid-row: 1;
-        grid-column: 1/3;
+        grid-column: 1;
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -1307,11 +1531,16 @@ footer {
 
     #redesSociales {
         grid-row: 2;
-        grid-column: 1/3;
+        grid-column: 1;
         display: flex;
         flex-direction: row;
         align-items: flex-end;
         justify-content: space-evenly;
+    }
+
+    #redesSociales img {
+        width: 25px;
+        height: 25px;
     }
     
     #textoFooter1 {
@@ -1319,8 +1548,9 @@ footer {
         grid-column: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        padding-left: 4rem;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0rem;
     }
     
     #textoFooter1 h4 {
@@ -1340,15 +1570,37 @@ footer {
     
     #textoFooter2 {
         font: normal normal normal 2rem/3rem Figtree;
-        grid-row: 3;
-        grid-column: 2;
+        grid-row: 4;
+        grid-column: 1;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     
-    
+}
 
+/* Preferencias de usuario */
+@media (prefers-color-scheme: dark) {
+
+    body { 
+      --text-color: #eee;
+      --bkg-color: #121212;
+    }
+
+    :root {
+        --primary: #FFFFFF;
+        --secondary: #000000;
+        --accentLight: #45CAE3;
+        --accentDark: #0099DA;
+    }
+
+    .modoLuz {
+        display: none;
+    }
+
+    .modoOscuro{
+        display: block;
+    }
 
 }
