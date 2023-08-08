@@ -1,0 +1,115 @@
+{
+    "pagetitle": "Reviba Consultores",
+    "headerEsp": [
+        {
+            "id": "headerLinkToS1",
+            "content" : "Nosotros"
+        },
+        {
+            "id": "headerLinkToS2",
+            "content" : "Consultoría a la Medida"
+        },
+        {
+            "id": "headerLinkToS3",
+            "content" : "Servicios"
+        },
+        {
+            "id": "headerLinkToS4",
+            "content" : "Mercado"
+        },
+        {
+            "id": "headerLinkToS5",
+            "content" : "Diferenciador"
+        },
+        {
+            "id": "headerLinkToS6",
+            "content" : "Contacto"
+        }
+    ],
+    "headerEng": [
+        {
+            "id": "headerLinkToS1",
+            "content" : "About us"
+        },
+        {
+            "id": "headerLinkToS2",
+            "content" : "Tailor-Made Consulting"
+        },
+        {
+            "id": "headerLinkToS3",
+            "content" : "Services"
+        },
+        {
+            "id": "headerLinkToS4",
+            "content" : "Clients"
+        },
+        {
+            "id": "headerLinkToS5",
+            "content" : "Results"
+        },
+        {
+            "id": "headerLinkToS6",
+            "content" : "Contact"
+        }
+    ],
+    "dataEsp": [
+        {
+            "id": "coverActionsText1",
+            "content" : "¡REdefine tus Límites! REinventa tu Éxito Empresarial con REVIBA"
+        },
+        {
+            "id": "coverActionsButton1",
+            "content" : "Contáctanos"
+        },
+        {
+            "id": "nosotrosText1",
+            "content" : "Reviba es una empresa mexicana especializada en consultoría comercial estratégica, ayudando a compañías a incrementar sus ingresos en entornos competitivos."
+        },
+        {
+            "id": "nosotrosText2",
+            "content" : "Nuestro equipo en Reviba es un grupo multidisciplinario con más de 60 años de experiencia combinada en empresas nacionales y globales. Nuestros socios identificaron que la gran mayoría de empresas mexicanas y latinoamericanas carecen de procesos, estrategias y conocimiento de nuevas tendencias, lo que las ha llevado a estancarse y perder rentabilidad frente al mercado cambiante y la creciente competencia. En Reviba, vemos una gran oportunidad para ayudar a estas empresas a resurgir y alcanzar el éxito. Por ello, nos especializamos en consultoría comercial, brindando estrategias y soluciones que permiten incrementar los ingresos en entornos competitivos."
+        },
+        {
+            "id": "tarjetaDaniel",
+            "content" : "Daniel es especialista en el diseño y armado de equipos de trabajo en proyectos innovadores empresariales, así como en la estructuración de empresas y grupos corporativos. Tiene amplia experiencia en compliance legal y en negociaciones corporativas complejas. Su profundo conocimiento de la legislación corporativa y su enfoque pragmático lo convierten en un valioso aliado para las empresas en su camino hacia el éxito. Su habilidad para resolver complejos desafíos legales y ofrecer estrategias sólidas brinda a nuestros clientes una ventaja competitiva en el mercado."
+        },
+        {
+            "id": "tarjetaAntonio",
+            "content" : "Antonio es especialista en procesos comerciales y certificaciones, con un enfoque meticuloso en la optimización de operaciones empresariales. Ha trabajado en diversas empresas líderes, implementando estructuras organizacionales eficientes y obteniendo certificaciones de calidad. Su dedicación por la excelencia y la eficiencia garantiza que las empresas a las que asesoramos alcancen niveles óptimos de rendimiento y competitividad."
+        },
+        {
+            "id": "tarjetaHector",
+            "content" : "Héctor es un experto en el ámbito comercial y ventas, con una vasta experiencia en liderar equipos de ventas y desarrollar estrategias de marketing efectivas. Su habilidad para identificar oportunidades de crecimiento y maximizar los ingresos ha sido clave en el éxito de diversas empresas. Su pasión por ayudar a las compañías a alcanzar su máximo potencial es lo que lo impulsa a brindar soluciones innovadoras y enfocadas en resultados."
+        }
+    ],
+    "dataEng": [
+        {
+            "id": "coverActionsText1",
+            "content" : "REdefine your Limits! REinvent your Business Success with REVIBA"
+        },
+        {
+            "id": "coverActionsButton1",
+            "content" : "Contact us"
+        },
+        {
+            "id": "nosotrosText1",
+            "content" : "Reviba is a Mexican company specialized in strategic commercial consulting, focused on helping companies increase their revenues in today's competitive market environments."
+        },
+        {
+            "id": "nosotrosText2",
+            "content" : "Our team at Reviba is a multidisciplinary group with over 60 years of combined experience in national and global companies. Our partners identified that the vast majority of Mexican and Latin American companies lack processes, strategies, and knowledge of new trends, which has led them to stagnate and lose profitability in the face of a changing market and growing competition. At Reviba, we see a great opportunity to help these companies revive and achieve success. That's why we specialize in strategic commercial consulting, providing solutions that allow increasing revenues in competitive environments."
+        },
+        {
+            "id": "tarjetaDaniel",
+            "content" : "Daniel is an expert in designing and assembling work teams in innovative business projects, as well as in the structuring of companies and corporate groups. He has extensive experience in legal compliance and complex corporate negotiations. His deep knowledge of corporate legislation and pragmatic approach make him a valuable ally for companies on their path to success. His ability to solve complex legal challenges and offer solid strategies provides our clients with a competitive advantage in the market."
+        },
+        {
+            "id": "tarjetaAntonio",
+            "content" : "Antonio is a specialist in business processes and certifications, with a meticulous focus on optimizing business operations. He has worked in several leading companies, implementing efficient organizational structures and obtaining quality certifications. His dedication to excellence and efficiency ensures that the companies we advise achieve optimal levels of performance and competitiveness."
+        },
+        {
+            "id": "tarjetaHector",
+            "content" : "Héctor is an expert in the field of sales and marketing, with extensive experience in leading sales teams and developing effective marketing strategies. His ability to identify growth opportunities and maximize revenue has been instrumental in the success of various companies. His passion for helping companies reach their full potential drives him to provide innovative and results-oriented solutions."
+        }
+    ]
+}
