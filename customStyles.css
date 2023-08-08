@@ -161,6 +161,7 @@ section {
     letter-spacing: 0px;
     color: #FFFFFF;
     opacity: 1;
+    text-decoration: none;
 }
 
 #home {
@@ -187,12 +188,91 @@ section {
     align-self: center;
 }
 
-.bienvenida h1 {
+#textoBienvenida {
     grid-column: 1/2;
     grid-row: 1/2;
     font: normal normal 900 4rem/5rem Figtree;
-    letter-spacing: 0.48px;
-    text-align: center;
+    display: grid;
+    place-items: center;
+    margin-top: 2rem;
+}
+
+#textoBienvenida:before,
+#textoBienvenida:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#textoBienvenida p {
+    margin: 2rem 0rem;
+}
+
+#efectoReviba {
+    box-sizing: content-box;
+    height: 6rem;
+    display: flex;
+}
+
+#efectoReviba p {
+    margin: 0;
+}
+
+.definiciones {
+    overflow: hidden;
+}
+
+.definiciones span {
+    display: block;
+    height: 100%;
+    animation: spin_words 14s infinite;
+    text-transform: uppercase;
+}
+
+@keyframes spin_words {
+    
+    0% {
+        transform: translateY(100%);
+    }
+    6% {
+        transform: translateY(0%);
+    }
+    14% {
+        transform: translateY(-100%);
+    }
+    22% {
+        transform: translateY(-200%);
+    }
+    30% {
+        transform: translateY(-300%);
+    }
+    38% {
+        transform: translateY(-400%);
+    }
+    46% {
+        transform: translateY(-500%);
+    }
+    54% {
+        transform: translateY(-600%);
+    }
+    62% {
+        transform: translateY(-700%);
+    }
+    70% {
+        transform: translateY(-800%);
+    }
+    78% {
+        transform: translateY(-900%);
+    }
+    86% {
+        transform: translateY(-1000%);
+    }
+    94% {
+        transform: translateY(-1100%);
+    }
+    100% {
+        transform: translateY(-1200%);
+    }
 }
 
 .coverActions {
@@ -227,7 +307,8 @@ section {
     padding-left: 16vh;
     padding-right: 16vh;
     display: grid;
-    grid-template: 40% 60% / 1fr;
+    grid-template: 30% 70% / 1fr;
+    height: 220vh;
 }
 
 #nosotrosTxt {
@@ -253,29 +334,36 @@ section {
     grid-column: 1;
     grid-row: 2/3;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .tarjetaSocio {
-    width: 35rem;
-    height: 90%;
+    width: 90%;
+    height: 40rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: stretch;
-    justify-content: flex-start;
+    justify-content: center;
     color: var(--primary);
 }
 
 .nombreSocio {
     font: normal normal bold 4rem/5rem Figtree;
-    text-align: center;
 }
 
 .fotoSocio {
-    width: 75%;
-    height: 75%;
+    width: 30%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotoSocio img {
+    width: 90%;
+    height: 90%;
     object-fit: cover;
     object-position: top center;
     border-radius: 1rem;
@@ -284,13 +372,13 @@ section {
 }
 
 .tituloSocio {
-    padding-left: 4.5rem;
-    padding-top: 1rem;
-    font: normal normal normal 2.5rem/3rem Figtree;
+    width: 70%;
+    padding-left: 2rem;
+    font: normal normal normal 2rem/2.5rem Figtree;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
 }
 
 .tituloSocio img {
@@ -927,10 +1015,6 @@ footer {
         font: italic normal bold 7rem/8.6rem Figtree;
     }
 
-    #socios {
-        justify-content: space-around;
-    }
-
     #misionVisionValores {
         background-color: #fff;
         padding: 0vh 0vh;
@@ -1118,11 +1202,11 @@ footer {
     }
     
     #nosotros {
-        height: 200vh;
+        height: 280vh;
         padding-left: 2vw;
         padding-right: 2vw;
         display: grid;
-        grid-template: 20% 80% / 1fr;
+        grid-template: 15% 85% / 1fr;
     }
     
     #nosotrosTxt {
@@ -1143,6 +1227,7 @@ footer {
     #nosotrosTxt p {
         text-align: center;
         font: normal normal normal 2.5rem/3rem Figtree;
+        text-align: justify;
     }
     
     #socios {
@@ -1156,11 +1241,25 @@ footer {
 
     .tarjetaSocio {
         width: 80%;
-        height: 45dvh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
+        text-align: justify;
+    }
+
+    .fotoSocio {
+        width: 50%;
+        height: 60%;
+    }
+
+    .tituloSocio {
+        justify-content: space-around;
+    }
+
+    .tituloSocio img {
+        width: 20px;
+        height: 20px;
     }
     
     #misionVisionValores {

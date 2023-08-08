@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="./src/logos/30 px/logoColorThumb.png" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
     </head>
 
     <body>
@@ -31,7 +33,7 @@
                         <a href="#nosotros">Nosotros</a>
                     </li>
                     <li id="headerLinkToS2">
-                        <a href="#productoEstrella">Asesoria Comercial</a>
+                        <a href="#productoEstrella">Asesoria Comercial</a>                   
                     </li>
                     <li id="headerLinkToS3">
                         <a href="#serviciosV1">Servicios</a>
@@ -93,15 +95,19 @@
                     <p class="idiomaEng" onClick="changeToEsp()">Es/<b>En</b></p>
                 </span>
 
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
             </div>
 
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#nosotros" onclick="closeNav()">Nosotros</a>
-            <a href="#seccionAsesoriaComercial" onclick="closeNav()">Asesoria Comercial</a>
-            <a href="#serviciosV1" onclick="closeNav()">Servicios</a>
-            <a href="#serviciosV2" onclick="closeNav()">Mercado</a>
-            <a href="#diferenciador" onclick="closeNav()">Diferenciador</a>
-            <a href="#contacto" onclick="closeNav()">Contacto</a>
+            <div>
+                <a href="#nosotros" onclick="closeNav()">Nosotros</a>
+                <a href="#seccionAsesoriaComercial" onclick="closeNav()">Asesoria Comercial</a>
+                <a href="#serviciosV1" onclick="closeNav()">Servicios</a>
+                <a href="#serviciosV2" onclick="closeNav()">Mercado</a>
+                <a href="#diferenciador" onclick="closeNav()">Diferenciador</a>
+                <a href="#contacto" onclick="closeNav()">Contacto</a>
+            </div>
+
         </div>
 
         <main>
@@ -114,22 +120,45 @@
 
                     <img src="./src/logos/logoColorMedio.png"/>
 
-                    <h1>
-                        EMBRACE THE POWER OF <br/>
-                        <span class="whiteText">
-                            <span class="accentBlueTwo">RE</span>INVENTION
-                        </span>
-                    </h1>
+                    <div id="textoBienvenida">
+
+                        <p>EMBRACE THE POWER</p>
+
+                        <div id="efectoReviba">
+
+                            <p>OF <span class="accentBlueTwo">RE</span></p>
+                            <div class="definiciones">
+                                <span>invention</span>
+                                <span>imagina</span>
+                                <span>construye</span>
+                                <span class="accentBlueTwo">viba</span>
+                                <span>inventa</span>
+                                <span>nueva</span>
+                                <span>organiza</span>
+                                <span class="accentBlueTwo">viba</span>
+                                <span>structura</span>
+                                <span>voluciona</span>
+                                <span>plantea</span>
+                                <span class="accentBlueTwo">viba</span>
+                            </div>
+
+                        </div>
+                        
+                    </div>
 
                 </span>
 
                 <span class="coverActions">
-                    <p>
+                    <p id="coverActionsText1">
                         El mejor consejo es nuestra consultoria
                     </p>
-                    <button class="actionCallButton">
+                    <a 
+                        class="actionCallButton"
+                        href="mailto:info@revibaconsultores.com"
+                        id="coverActionsButton1"
+                    >
                         Contáctanos
-                    </button>
+                    </a> 
                 </span>
 
                 <span class="coverImg">
@@ -144,7 +173,8 @@
                     <h2>
                         ¿QUIENES SOMOS?
                     </h2>
-                    <p>
+                    <p id="nosotrosText1"></p>
+                    <p id="nosotrosText2">
                         Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
                     </p>
                 </span>
@@ -152,30 +182,47 @@
                 <span id="socios">
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Daniel <span class="accentBlueOne">Re</span>yes</span>
-                        <img class="fotoSocio" alt="Daniel Reyes en escala de grises." src="./src/grupoReviba/danielReyes.jpeg" alt="Foto de perfil de Daniel Reyes" />
-                        <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
-                            Socio Reviba
+
+                        <span class="fotoSocio">
+                            <img alt="Daniel Reyes en escala de grises." src="./src/grupoReviba/danielReyes.jpeg" alt="Foto de perfil de Daniel Reyes" />
                         </span>
+                        
+                        <span class="tituloSocio">
+                            <span class="nombreSocio">Daniel <span class="accentBlueOne">Re</span>yes</span>
+                            <span id="tarjetaDaniel"></span>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                        </span>
+
                     </span>
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Antonio <span class="accentBlueOne">Vi</span>vanco</span>
-                        <img class="fotoSocio" alt="Antonio Vivanco en escala de grises" src="./src/grupoReviba/antonioVivanco.jpeg" alt="Foto de perfil de Antonio Vivanco" />
-                        <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
-                            Socio Reviba
+
+                        <span class="fotoSocio">
+                            <img alt="Antonio Vivanco en escala de grises" src="./src/grupoReviba/antonioVivanco.jpeg" alt="Foto de perfil de Antonio Vivanco" />
                         </span>
+
+                        
+                        <span class="tituloSocio">
+                            <span class="nombreSocio">Antonio <span class="accentBlueOne">Vi</span>vanco</span>
+                            <span id="tarjetaAntonio"></span>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                        </span>
+
                     </span>
 
                     <span class="tarjetaSocio">
-                        <span class="nombreSocio">Hector <span class="accentBlueOne">Ba</span>rillas</span>
-                        <img class="fotoSocio" alt="Hector Barillas en escala de grises" src="./src/grupoReviba/hectorBarillas.jpeg" alt="Foto de perfil de Hector Barillas" />
-                        <span class="tituloSocio">
-                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
-                            Socio Reviba
+
+                        <span class="fotoSocio">
+                            <img alt="Hector Barillas en escala de grises" src="./src/grupoReviba/hectorBarillas.jpeg" alt="Foto de perfil de Hector Barillas" />
                         </span>
+
+                        
+                        <span class="tituloSocio">
+                            <span class="nombreSocio">Hector <span class="accentBlueOne">Ba</span>rillas</span>
+                            <span id="tarjetaHector"></span>
+                            <a href="#"><img src="./src/iconos/iconoLinkedin.png" alt="LinkedIn Icon"/></a>
+                        </span>
+
                     </span>
                     
                 </span>

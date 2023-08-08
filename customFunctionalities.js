@@ -1,5 +1,5 @@
 let root = document.querySelector(':root')
-     
+  
 function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -24,6 +24,8 @@ function changeToEsp() {
     espElems.forEach( (elem) => {
         elem.style.display = 'block';
     });
+
+    loadDataEsp();
 }
 
 function changeToEng() {
@@ -37,6 +39,8 @@ function changeToEng() {
     engElems.forEach( (elem) => {
         elem.style.display = 'block';
     });
+
+    loadDataEng();
 }
 
 function changeToLight() {
@@ -74,3 +78,46 @@ function changeToDark() {
         elem.style.display = 'block';
     });
 }
+
+function loadHeader(values) {
+
+    values.forEach( (val) => {
+        document.getElementById(val.id).getElementsByTagName('a')[0].innerText = val.content;
+    });
+
+    let sideBarElements = document.getElementById('mySidebar').childNodes[3].querySelectorAll('a');
+    sideBarElements.forEach( (elem, index) => {
+        elem.innerText = values[index].content;
+    });
+
+}
+
+function loadContent(content) {
+    content.forEach( (contentItem) => {
+        document.getElementById(contentItem.id).innerHTML = contentItem.content;
+    });
+}
+
+function loadDataEsp() {
+    fetch('./contentData.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        loadHeader(data.headerEsp)
+        loadContent(data.dataEsp)
+    });
+}
+
+function loadDataEng() {
+    fetch('./contentData.json')
+    .then((res) => {
+        return res.json();
+    })
+    .then((data) => {
+        loadHeader(data.headerEng)
+        loadContent(data.dataEng)
+    });
+}
+
+loadDataEsp();
