@@ -82,7 +82,7 @@ function changeToDark() {
 function loadHeader(values) {
 
     values.forEach( (val) => {
-        document.getElementById(val.id).getElementsByTagName('a')[0].innerText = val.content;
+        document.getElementById(val.id).getElementsByTagName('a')[0].innerHTML = val.content;
     });
 
     let sideBarElements = document.getElementById('mySidebar').childNodes[3].querySelectorAll('a');

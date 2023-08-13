@@ -15,7 +15,7 @@
         },
         {
             "id": "headerLinkToS4",
-            "content" : "Mercado"
+            "content" : "Nuestros Clientes"
         },
         {
             "id": "headerLinkToS5",
@@ -124,6 +124,16 @@
             "contentEng": "Reviba tiene claro que nuestros pilares de éxito son:<ol><li>Conocimiento profundo del mercado: Entender las necesidades y tendencias del mercado mexicano y latinoamericano, así como su relación con las necesidades de los clientes.</li><li>Personal altamente capacitado: Contar con un equipo capacitado que pueda brindar soluciones personalizadas y de alta calidad a los clientes.</li><li>Buena reputación: Mantener una buena reputación en la industria y tener recomendaciones positivas de clientes anteriores.</li><li>Competitividad: Ofrecer precios razonables y competitivos que reflejen el valor agregado que la consultora puede proporcionar.</li><li>Tecnología actualizada: Mantenerse al día con los últimos avances tecnológicos y utilizar herramientas y tecnologías adecuadas para brindar soluciones más eficientes y efectivas.</li><li>Ética profesional: Actuar con integridad, honestidad y transparencia en todos sus tratos con los clientes y proveedores.</li></ol>"
         },
         {
+            "id": "valoresTitle",
+            "contentEsp" : "Nuestros Valores",
+            "contentEng": "Our Values"
+        },
+        {
+            "id": "valoresContent",
+            "contentEsp" : "<b>REsultados para el cliente:</b> Priorizamos la generación de valor para el cliente, optimizando sus resultados a través de nuestras soluciones.<br/><br/><b>RElaciones de confianza:</b> Creemos en la creación de relaciones duraderas basadas en la integridad, la transparencia y el respeto mutuo.<br/><br/><b>REsiliencia:</b> Nos adaptamos a los cambios del mercado, mostrando tenacidad y perseverancia para alcanzar nuestros objetivos y los de nuestros clientes.<br/><br/><b>REinvención:</b> Fomentamos la innovación constante, reinventándonos para brindar las soluciones más eficaces y actuales.<br/><br/><b>REsponsabilidad:</b> Nos comprometemos a actuar de manera responsable en todas nuestras operaciones, teniendo en cuenta las repercusiones sociales y ambientales.<br/><br/>",
+            "contentEng": "REsults for the client: We prioritize the generation of value for the client, optimizing their results through our solutions.<br/><br/>RElationships of trust: We believe in creating long-lasting relationships based on integrity, transparency, and mutual respect.<br/><br/>REsilience: We adapt to market changes, showing tenacity and perseverance to achieve our goals and those of our clients.<br/><br/>REinvention: We promote constant innovation, reinventing ourselves to provide the most effective and current solutions.<br/><br/>REsponsibility: We commit to act responsibly in all our operations, taking into account social and environmental implications."
+        },
+        {
             "id": "objetivoTitle",
             "contentEsp" : "Nuestro Objetivo",
             "contentEng": "Our Goal"
@@ -219,14 +229,24 @@
             "contentEng": "At Reviba, the difference lies in our unwavering dedication to tailor-made solutions. We combine experience, market knowledge, and an innovative approach to overcome your unique challenges and goals. Choose Reviba for personalized excellence service."
         },
         {
-            "id":"tarjetaSubtitulo",
+            "id":"tarjetaSubtitulo1",
+            "contentEsp": "Representa",
+            "contentEng": "Represents"
+        },
+        {
+            "id":"tarjetaSubtitulo2",
+            "contentEsp": "Representa",
+            "contentEng": "Represents"
+        },
+        {
+            "id":"tarjetaSubtitulo3",
             "contentEsp": "Representa",
             "contentEng": "Represents"
         },
         {
             "id": "tarjetaRESubtitulo",
-            "contentEsp": "<span id='accentWordTitle'>RE</span>novación",
-            "contentEng": "<span id='accentWordTitle'>RE</span>newal"
+            "contentEsp": "<span class='accentBlueOne'>RE</span>novación",
+            "contentEng": "<span class='accentBlueOne'>RE</span>newal"
         },
         {
             "id": "tarjetaREContenido",
@@ -235,8 +255,8 @@
         },
         {
             "id": "tarjetaVISubtitulo",
-            "contentEsp": "<span id='accentWordTitle'>VI</span>sión",
-            "contentEng": "<span id='accentWordTitle'>VI</span>sion"
+            "contentEsp": "<span class='accentBlueOne'>VI</span>sión",
+            "contentEng": "<span class='accentBlueOne'>VI</span>sion"
         },
         {
             "id": "tarjetaVIContenido",
@@ -245,8 +265,8 @@
         },
         {
             "id": "tarjetaBASubtitulo",
-            "contentEsp": "<span id='accentWordTitle'>BA</span>lance",
-            "contentEng": "<span id='accentWordTitle'>BA</span>lance"
+            "contentEsp": "<span class='accentBlueOne'>BA</span>lance",
+            "contentEng": "<span class='accentBlueOne'>BA</span>lance"
         },
         {
             "id": "tarjetaBAContenido",
@@ -260,18 +280,18 @@
         },
         {
             "id": "ultimaLlamadaContent1",
-            "contentEsp": "Elige relevancia, visión y equilibrio en tu camino hacia el éxito. Nuestra consultoría personalizada te proporciona las respuestas y soluciones que necesitas.",
-            "contentEng": "Choose relevance, vision, and balance on your path to success. Our tailor-made consulting provides you with the answers and solutions you need."
+            "contentEsp": "Elige relevancia, visión y equilibrio en tu camino hacia el éxito. Nuestra consultoría personalizada te proporciona las respuestas y soluciones que necesitas.<br/>Superar tus desafíos y alcanzar tus metas es posible con Reviba. No esperes más, inicia tu viaje hacia la transformación y el crecimiento.",
+            "contentEng": "Choose relevance, vision, and balance on your path to success. Our tailor-made consulting provides you with the answers and solutions you need.<br/>Overcoming your challenges and reaching your goals is possible with Reviba. Don't wait any longer, start your journey towards transformation and growth."
         },
         {
-            "id": "ultimaLlamadaBoton",
-            "contentEsp": "Comienza tu Transformación Ahora",
-            "contentEng": "Start Your Transformation Now"
+            "id": "ultimaLlamadaBtnText",
+            "contentEsp": "Comienza tu Transformación",
+            "contentEng": "Start Your Transformation"
         },
         {
-            "id": "ultimaLlamadaContent2",
-            "contentEsp": "Superar tus desafíos y alcanzar tus metas es posible con Reviba. No esperes más, inicia tu viaje hacia la transformación y el crecimiento.",
-            "contentEng": "Overcoming your challenges and reaching your goals is possible with Reviba. Don't wait any longer, start your journey towards transformation and growth."
+            "id": "ultimaLlamadaBtnLink",
+            "contentEsp": "Ahora",
+            "contentEng": "Now"
         },
         {
             "id": "contactoUbicacion",
