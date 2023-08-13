@@ -25,7 +25,7 @@ function changeToEsp() {
         elem.style.display = 'block';
     });
 
-    loadDataEsp();
+    loadData(true);
 }
 
 function changeToEng() {
@@ -40,7 +40,7 @@ function changeToEng() {
         elem.style.display = 'block';
     });
 
-    loadDataEng();
+    loadData(false);
 }
 
 function changeToLight() {
@@ -92,32 +92,32 @@ function loadHeader(values) {
 
 }
 
-function loadContent(content) {
+function loadContentEsp(content) {
     content.forEach( (contentItem) => {
-        document.getElementById(contentItem.id).innerHTML = contentItem.content;
+        document.getElementById(contentItem.id).innerHTML = contentItem.contentEsp;
     });
 }
 
-function loadDataEsp() {
+function loadContentEng(content) {
+    content.forEach( (contentItem) => {
+        document.getElementById(contentItem.id).innerHTML = contentItem.contentEng;
+    });
+}
+
+function loadData(isEsp) {
     fetch('./contentData.json')
     .then((res) => {
         return res.json();
     })
     .then((data) => {
-        loadHeader(data.headerEsp)
-        loadContent(data.dataEsp)
+        if (isEsp) {
+            loadContentEsp(data.pageContent)
+            loadHeader(data.headerEsp)
+        } else {
+            loadContentEng(data.pageContent)
+            loadHeader(data.headerEng)
+        }
     });
 }
 
-function loadDataEng() {
-    fetch('./contentData.json')
-    .then((res) => {
-        return res.json();
-    })
-    .then((data) => {
-        loadHeader(data.headerEng)
-        loadContent(data.dataEng)
-    });
-}
-
-loadDataEsp();
+loadData(true);

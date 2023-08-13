@@ -52,64 +52,236 @@
             "content" : "Contact"
         }
     ],
-    "dataEsp": [
+    "pageContent": [
         {
             "id": "coverActionsText1",
-            "content" : "¡REdefine tus Límites! REinventa tu Éxito Empresarial con REVIBA"
+            "contentEsp" : "¡<span class='accentBlueOne'>Re</span>define tus Límites! <span class='accentBlueOne'>Re</span>inventa tu Éxito Empresarial con <span class='accentBlueOne'>REVIBA</span>",
+            "contentEng": "<span class='accentBlueOne'>Re</span>define your Limits! <span class='accentBlueOne'>Re</span>invent your Business Success with <span class='accentBlueOne'>REVIBA</span>"
         },
         {
             "id": "coverActionsButton1",
-            "content" : "Contáctanos"
+            "contentEsp" : "Contáctanos",
+            "contentEng": "Contact us"
+        },
+        {
+            "id": "sectionTitleNosotros",
+            "contentEsp" : "¿Quiénes Somos?"       ,
+            "contentEng": "About us"
         },
         {
             "id": "nosotrosText1",
-            "content" : "Reviba es una empresa mexicana especializada en consultoría comercial estratégica, ayudando a compañías a incrementar sus ingresos en entornos competitivos."
+            "contentEsp" : "Reviba es una empresa mexicana especializada en consultoría comercial estratégica, ayudando a compañías a incrementar sus ingresos en entornos competitivos.",
+            "contentEng": "Reviba is a Mexican company specialized in strategic commercial consulting, focused on helping companies increase their revenues in today's competitive market environments."
         },
         {
             "id": "nosotrosText2",
-            "content" : "Nuestro equipo en Reviba es un grupo multidisciplinario con más de 60 años de experiencia combinada en empresas nacionales y globales. Nuestros socios identificaron que la gran mayoría de empresas mexicanas y latinoamericanas carecen de procesos, estrategias y conocimiento de nuevas tendencias, lo que las ha llevado a estancarse y perder rentabilidad frente al mercado cambiante y la creciente competencia. En Reviba, vemos una gran oportunidad para ayudar a estas empresas a resurgir y alcanzar el éxito. Por ello, nos especializamos en consultoría comercial, brindando estrategias y soluciones que permiten incrementar los ingresos en entornos competitivos."
+            "contentEsp" : "Nuestro equipo en Reviba es un grupo multidisciplinario con más de 60 años de experiencia combinada en empresas nacionales y globales. Nuestros socios identificaron que la gran mayoría de empresas mexicanas y latinoamericanas carecen de procesos, estrategias y conocimiento de nuevas tendencias, lo que las ha llevado a estancarse y perder rentabilidad frente al mercado cambiante y la creciente competencia. En Reviba, vemos una gran oportunidad para ayudar a estas empresas a resurgir y alcanzar el éxito. Por ello, nos especializamos en consultoría comercial, brindando estrategias y soluciones que permiten incrementar los ingresos en entornos competitivos.",
+            "contentEng": "Our team at Reviba is a multidisciplinary group with over 60 years of combined experience in national and global companies. Our partners identified that the vast majority of Mexican and Latin American companies lack processes, strategies, and knowledge of new trends, which has led them to stagnate and lose profitability in the face of a changing market and growing competition. At Reviba, we see a great opportunity to help these companies revive and achieve success. That's why we specialize in strategic commercial consulting, providing solutions that allow increasing revenues in competitive environments."
         },
         {
             "id": "tarjetaDaniel",
-            "content" : "Daniel es especialista en el diseño y armado de equipos de trabajo en proyectos innovadores empresariales, así como en la estructuración de empresas y grupos corporativos. Tiene amplia experiencia en compliance legal y en negociaciones corporativas complejas. Su profundo conocimiento de la legislación corporativa y su enfoque pragmático lo convierten en un valioso aliado para las empresas en su camino hacia el éxito. Su habilidad para resolver complejos desafíos legales y ofrecer estrategias sólidas brinda a nuestros clientes una ventaja competitiva en el mercado."
+            "contentEsp" : "Daniel es especialista en el diseño y armado de equipos de trabajo en proyectos innovadores empresariales, así como en la estructuración de empresas y grupos corporativos. Tiene amplia experiencia en compliance legal y en negociaciones corporativas complejas. Su profundo conocimiento de la legislación corporativa y su enfoque pragmático lo convierten en un valioso aliado para las empresas en su camino hacia el éxito. Su habilidad para resolver complejos desafíos legales y ofrecer estrategias sólidas brinda a nuestros clientes una ventaja competitiva en el mercado.",
+            "contentEng": "Daniel is an expert in designing and assembling work teams in innovative business projects, as well as in the structuring of companies and corporate groups. He has extensive experience in legal compliance and complex corporate negotiations. His deep knowledge of corporate legislation and pragmatic approach make him a valuable ally for companies on their path to success. His ability to solve complex legal challenges and offer solid strategies provides our clients with a competitive advantage in the market."
         },
         {
             "id": "tarjetaAntonio",
-            "content" : "Antonio es especialista en procesos comerciales y certificaciones, con un enfoque meticuloso en la optimización de operaciones empresariales. Ha trabajado en diversas empresas líderes, implementando estructuras organizacionales eficientes y obteniendo certificaciones de calidad. Su dedicación por la excelencia y la eficiencia garantiza que las empresas a las que asesoramos alcancen niveles óptimos de rendimiento y competitividad."
+            "contentEsp" : "Antonio es especialista en procesos comerciales y certificaciones, con un enfoque meticuloso en la optimización de operaciones empresariales. Ha trabajado en diversas empresas líderes, implementando estructuras organizacionales eficientes y obteniendo certificaciones de calidad. Su dedicación por la excelencia y la eficiencia garantiza que las empresas a las que asesoramos alcancen niveles óptimos de rendimiento y competitividad.",
+            "contentEng": "Antonio is a specialist in business processes and certifications, with a meticulous focus on optimizing business operations. He has worked in several leading companies, implementing efficient organizational structures and obtaining quality certifications. His dedication to excellence and efficiency ensures that the companies we advise achieve optimal levels of performance and competitiveness."
         },
         {
             "id": "tarjetaHector",
-            "content" : "Héctor es un experto en el ámbito comercial y ventas, con una vasta experiencia en liderar equipos de ventas y desarrollar estrategias de marketing efectivas. Su habilidad para identificar oportunidades de crecimiento y maximizar los ingresos ha sido clave en el éxito de diversas empresas. Su pasión por ayudar a las compañías a alcanzar su máximo potencial es lo que lo impulsa a brindar soluciones innovadoras y enfocadas en resultados."
-        }
-    ],
-    "dataEng": [
-        {
-            "id": "coverActionsText1",
-            "content" : "REdefine your Limits! REinvent your Business Success with REVIBA"
+            "contentEsp" : "Héctor es un experto en el ámbito comercial y ventas, con una vasta experiencia en liderar equipos de ventas y desarrollar estrategias de marketing efectivas. Su habilidad para identificar oportunidades de crecimiento y maximizar los ingresos ha sido clave en el éxito de diversas empresas. Su pasión por ayudar a las compañías a alcanzar su máximo potencial es lo que lo impulsa a brindar soluciones innovadoras y enfocadas en resultados.",
+            "contentEng": "Héctor is an expert in the field of sales and marketing, with extensive experience in leading sales teams and developing effective marketing strategies. His ability to identify growth opportunities and maximize revenue has been instrumental in the success of various companies. His passion for helping companies reach their full potential drives him to provide innovative and results-oriented solutions."
         },
         {
-            "id": "coverActionsButton1",
-            "content" : "Contact us"
+            "id": "misionTitle",
+            "contentEsp" : "Misión",
+            "contentEng": "Mission"
         },
         {
-            "id": "nosotrosText1",
-            "content" : "Reviba is a Mexican company specialized in strategic commercial consulting, focused on helping companies increase their revenues in today's competitive market environments."
+            "id": "misionContent",
+            "contentEsp" : "REdefinir el éxito empresarial a través de servicios de consultoría estratégica personalizados. Nos enfocamos en REimpulsar la visión, el valor y la vitalidad de las empresas en México y Latinoamérica. Nuestro objetivo es descubrir y maximizar el potencial oculto en cada empresa, para alcanzar un crecimiento sostenible y resultados de alto impacto. Creemos en la colaboración, la adaptabilidad y la innovación como pilares para construir negocios fuertes y resilientes. Nos comprometemos a trabajar estrechamente con nuestros clientes, brindándoles soluciones a la medida que los ayuden a superar sus desafíos y lograr sus metas.",
+            "contentEng": "REdefine business success through tailored strategic consulting services. We focus on REvitalizing the vision, value, and vitality of businesses in Mexico and Latin America. Our goal is to discover and maximize the hidden potential within each company, achieving sustainable growth and high-impact results. We believe in collaboration, adaptability, and innovation as pillars for building strong and resilient businesses. We are committed to working closely with our clients, providing them with tailor-made solutions that help them overcome their challenges and achieve their goals."
         },
         {
-            "id": "nosotrosText2",
-            "content" : "Our team at Reviba is a multidisciplinary group with over 60 years of combined experience in national and global companies. Our partners identified that the vast majority of Mexican and Latin American companies lack processes, strategies, and knowledge of new trends, which has led them to stagnate and lose profitability in the face of a changing market and growing competition. At Reviba, we see a great opportunity to help these companies revive and achieve success. That's why we specialize in strategic commercial consulting, providing solutions that allow increasing revenues in competitive environments."
+            "id": "visionTitle",
+            "contentEsp" : "Visión",
+            "contentEng": "Vision"
         },
         {
-            "id": "tarjetaDaniel",
-            "content" : "Daniel is an expert in designing and assembling work teams in innovative business projects, as well as in the structuring of companies and corporate groups. He has extensive experience in legal compliance and complex corporate negotiations. His deep knowledge of corporate legislation and pragmatic approach make him a valuable ally for companies on their path to success. His ability to solve complex legal challenges and offer solid strategies provides our clients with a competitive advantage in the market."
+            "id": "visionContent",
+            "contentEsp" : "Ser un catalizador en la REvolución de los negocios, guiando a nuestros clientes a adaptarse y aprovechar oportunidades en un paisaje empresarial en constante evolución. Aspiramos a ser reconocidos internacionalmente como una consultoría comercial distintiva por nuestra excelencia en servicio al cliente, profundos conocimientos especializados y habilidad para diseñar estrategias de vanguardia.",
+            "contentEng": "To be a catalyst in the REvolution of businesses, guiding our clients to adapt and seize opportunities in an ever-evolving business landscape. We aspire to be internationally recognized as a distinctive commercial consultancy, known for our excellence in customer service, deep specialized knowledge, and ability to design cutting-edge strategies."
         },
         {
-            "id": "tarjetaAntonio",
-            "content" : "Antonio is a specialist in business processes and certifications, with a meticulous focus on optimizing business operations. He has worked in several leading companies, implementing efficient organizational structures and obtaining quality certifications. His dedication to excellence and efficiency ensures that the companies we advise achieve optimal levels of performance and competitiveness."
+            "id": "factoresTitle",
+            "contentEsp" : "Nuestros factores de éxito",
+            "contentEng": "Factors to success"
         },
         {
-            "id": "tarjetaHector",
-            "content" : "Héctor is an expert in the field of sales and marketing, with extensive experience in leading sales teams and developing effective marketing strategies. His ability to identify growth opportunities and maximize revenue has been instrumental in the success of various companies. His passion for helping companies reach their full potential drives him to provide innovative and results-oriented solutions."
+            "id": "factoresContent",
+            "contentEsp" : "Reviba tiene claro que nuestros pilares de éxito son:<ol><li>Conocimiento profundo del mercado: Entender las necesidades y tendencias del mercado mexicano y latinoamericano, así como su relación con las necesidades de los clientes.</li><li>Personal altamente capacitado: Contar con un equipo capacitado que pueda brindar soluciones personalizadas y de alta calidad a los clientes.</li><li>Buena reputación: Mantener una buena reputación en la industria y tener recomendaciones positivas de clientes anteriores.</li><li>Competitividad: Ofrecer precios razonables y competitivos que reflejen el valor agregado que la consultora puede proporcionar.</li><li>Tecnología actualizada: Mantenerse al día con los últimos avances tecnológicos y utilizar herramientas y tecnologías adecuadas para brindar soluciones más eficientes y efectivas.</li><li>Ética profesional: Actuar con integridad, honestidad y transparencia en todos sus tratos con los clientes y proveedores.</li></ol>",
+            "contentEng": "Reviba tiene claro que nuestros pilares de éxito son:<ol><li>Conocimiento profundo del mercado: Entender las necesidades y tendencias del mercado mexicano y latinoamericano, así como su relación con las necesidades de los clientes.</li><li>Personal altamente capacitado: Contar con un equipo capacitado que pueda brindar soluciones personalizadas y de alta calidad a los clientes.</li><li>Buena reputación: Mantener una buena reputación en la industria y tener recomendaciones positivas de clientes anteriores.</li><li>Competitividad: Ofrecer precios razonables y competitivos que reflejen el valor agregado que la consultora puede proporcionar.</li><li>Tecnología actualizada: Mantenerse al día con los últimos avances tecnológicos y utilizar herramientas y tecnologías adecuadas para brindar soluciones más eficientes y efectivas.</li><li>Ética profesional: Actuar con integridad, honestidad y transparencia en todos sus tratos con los clientes y proveedores.</li></ol>"
+        },
+        {
+            "id": "objetivoTitle",
+            "contentEsp" : "Nuestro Objetivo",
+            "contentEng": "Our Goal"
+        },
+        {
+            "id": "objetivoContent",
+            "contentEsp" : "En ReViBa, nuestro objetivo es impulsar apasionadamente el crecimiento sostenible de las empresas, mejorando la eficiencia de sus procesos comerciales y maximizando sus ingresos.",
+            "contentEng": "At ReViBa, our goal is to passionately drive sustainable growth for businesses, enhancing the efficiency of their business processes and maximizing their revenue."
+        },
+        {
+            "id": "queHacemosTitle",
+            "contentEsp": "Cómo REinventamos tu Negocio",
+            "contentEng": "How we REinvent your Business"
+        },
+        {
+            "id": "queHacemosContent1",
+            "contentEsp": "En REVIBA, nos especializamos en la REinvención de tu negocio. Nuestro enfoque está diseñado para REplantear tus procesos comerciales estratégicos, REorientar tus esfuerzos de crecimiento y REimpulsar tus ingresos.",
+            "contentEng": "At REVIBA, we specialize in the REinvention of your business. Our approach is designed to REthink your strategic business processes, REorient your growth efforts, and REboost your revenues."
+        },
+        {
+            "id": "queHacemosContent2",
+            "contentEsp": "REconocimiento de tus necesidades: Comenzamos con un análisis detallado de tus procesos y estrategias actuales.<br/>REdiseño de tu plan estratégico: Desarrollamos un plan personalizado basado en nuestros hallazgos, que se adapta a tus necesidades y objetivos específicos.<br/>REalización: Implementamos el plan, trabajando en estrecha colaboración contigo en cada paso del proceso.<br/>REvisión y mejora continua: Una vez que el plan está en marcha, realizamos revisiones periódicas y ajustes según sea necesario, garantizando que sigas en el camino hacia el crecimiento sostenido.",
+            "contentEng": "REcognition of your needs: We start with a detailed analysis of your current processes and strategies.<br/>REdesign of your strategic plan: We develop a personalized plan based on our findings, tailored to your specific needs and goals.<br/>REalization: We implement the plan, working closely with you at every step of the process.<br/>REview and continuous improvement: Once the plan is in motion, we perform periodic reviews and adjustments as needed, ensuring you stay on the path to sustained growth."
+        },
+        {
+            "id": "seccionAsesoriaComercial",
+            "contentEsp": "Consultoría a la Medida",
+            "contentEng": "Tailor-Made Consulting"
+        },
+        {
+            "id": "seccionAsesoriaComBoton1",
+            "contentEsp": "Contáctanos",
+            "contentEng": "Contact Us"
+        },
+        {
+            "id": "PETexto1",
+            "contentEsp": "En REVIBA, ofrecemos 'Consultoría a la Medida'. Comenzamos con un análisis en profundidad de tu negocio, mercado y panorama industrial. Al colaborar estrechamente con tu equipo directivo, entendemos tus objetivos y alineamos nuestras estrategias con tu visión.<br/>Basándonos en años de experiencia, proporcionamos soluciones tangibles y medibles y elaboramos estrategias prácticas para mejorar el rendimiento de tu negocio; ya sea redefiniendo tu enfoque comercial, sugiriendo la implementación de tecnología de vanguardia o simplificando procesos operativos.<br/>Como parte de nuestro servicio, enfatizamos la transferencia de conocimientos y el desarrollo de habilidades. Trabajamos en colaboración con tu equipo, compartiendo nuestra experiencia y capacitando a tu personal para una implementación exitosa de las estrategias. Nuestro enfoque es holístico, considerando las implicaciones más amplias de cada decisión para fomentar el éxito a largo plazo.<br/>A lo largo de la relación, mantenemos canales de comunicación abiertos, manteniéndote informado sobre el progreso y los resultados. Monitoreamos continuamente el impacto de nuestras intervenciones, y en estrecha colaboración contigo, coadyuvamos para alcanzar los resultados deseados. Esto deja claro que el éxito de nuestros esfuerzos también depende de tu cooperación y participación activa.",
+            "contentEng": "At REVIBA, we offer 'Tailor-Made Consulting'. We start with an in-depth analysis of your business, market, and industry landscape. By working closely with your management team, we understand your objectives and align our strategies with your vision.<br/>Drawing on years of experience, we provide tangible, measurable solutions and develop practical strategies to improve your business performance; whether it's by redefining your commercial approach, suggesting the implementation of cutting-edge technology, or simplifying operational processes.<br/>As part of our service, we emphasize knowledge transfer and skill development. We collaborate with your team, sharing our expertise and training your staff for successful strategy implementation. Our approach is holistic, considering the broader implications of each decision to foster long-term success.<br/>Throughout the relationship, we keep communication channels open, keeping you informed about progress and outcomes. We continually monitor the impact of our interventions, and in close collaboration with you, we contribute to achieving the desired results. This makes it clear that the success of our efforts also depends on your active participation and cooperation."
+        },
+        {
+            "id": "seccionAsesoriaComConclusion",
+            "contentEsp": "En REVIBA, convertimos tu visión en realidad con nuestra 'Consultoría a la Medida'. Analizamos, alineamos, refinamos e implementamos estrategias efectivas, transformando tu negocio mientras desarrollamos habilidades y fomentamos el éxito a largo plazo.",
+            "contentEng": "At REVIBA, we turn your vision into reality with our 'Tailor-Made Consulting'. We analyze, align, refine, and implement effective strategies, transforming your business while developing skills and fostering long-term success"
+        },
+        {
+            "id": "seccionServicios1Titulo",
+            "contentEsp": "<span class='accentBlueOne'>Re</span>inventa tu Negocio con Nuestros Servicios",
+            "contentEng": "<span class='accentBlueOne'>Re</span>invent Your Business with Our Services"
+        },
+        {
+            "id": "seccionServicios1Content1",
+            "contentEsp": "En Reviba, transformamos tu realidad empresarial a través de nuestra gama de servicios personalizados. Redefinimos, reimpulsamos y revolucionamos tu negocio, permitiéndote alcanzar tus objetivos y superar cualquier desafío",
+            "contentEng": "At Reviba, we transform your business reality through our range of tailored services. We redefine, reboost, and revolutionize your business, enabling you to reach your goals and overcome any challenge."
+        },
+        {
+            "id": "tarjetaServicios1Titulo",
+            "contentEsp": "Consultoría Estrategica",
+            "contentEng": "Strategic Consulting"
+        },
+        {
+            "id": "tarjetaServicios2Titulo",
+            "contentEsp": "Consultoría comercial (Tailor-made)",
+            "contentEng": "Business Consulting (Tailor-made) "
+        },
+        {
+            "id": "tarjetaServicios3Titulo",
+            "contentEsp": "Ampliación de Red comercial y de influenciamiento",
+            "contentEng": "Commercial Network and Influence Expansion"
+        },
+        {
+            "id": "tarjetaServicios4Titulo",
+            "contentEsp": "Gestión de Riesgos",
+            "contentEng": "Risk Management"
+        },
+        {
+            "id": "tarjetaServicios5Titulo",
+            "contentEsp": "Transformación Digital",
+            "contentEng": "Digital Transformation"
+        },
+        {
+            "id": "tarjetaServicios6Titulo",
+            "contentEsp": "Cumplimiento Legal y Regulatorio",
+            "contentEng": "Legal and Regulatory Compliance"
+        },
+        {
+            "id": "diferenciadorTitulo",
+            "contentEsp": "¿Por qué REVIBA?",
+            "contentEng": "Why REVIBA?"
+        },
+        {
+            "id": "diferenciadorContenido1",
+            "contentEsp": "En Reviba, la diferencia radica en nuestra inquebrantable dedicación a soluciones a medida. Combinamos experiencia, conocimiento del mercado y un enfoque innovador para superar tus desafíos y metas únicas. Elige Reviba para un servicio de excelencia personalizada.",
+            "contentEng": "At Reviba, the difference lies in our unwavering dedication to tailor-made solutions. We combine experience, market knowledge, and an innovative approach to overcome your unique challenges and goals. Choose Reviba for personalized excellence service."
+        },
+        {
+            "id":"tarjetaSubtitulo",
+            "contentEsp": "Representa",
+            "contentEng": "Represents"
+        },
+        {
+            "id": "tarjetaRESubtitulo",
+            "contentEsp": "<span id='accentWordTitle'>RE</span>novación",
+            "contentEng": "<span id='accentWordTitle'>RE</span>newal"
+        },
+        {
+            "id": "tarjetaREContenido",
+            "contentEsp": "En Reviba, entendemos la importancia de la renovación para mantener el ritmo con las tendencias y cambios del mercado. Nuestros enfoques y estrategias son relevantes para el clima empresarial actual y futuro, siempre enfatizando la necesidad de una reinvención continua.",
+            "contentEng": "In Reviba, we understand the significance of renewal in keeping pace with market trends and changes. Our approaches and strategies are relevant for the current and future business climate, always emphasizing the need for continuous reinvention."
+        },
+        {
+            "id": "tarjetaVISubtitulo",
+            "contentEsp": "<span id='accentWordTitle'>VI</span>sión",
+            "contentEng": "<span id='accentWordTitle'>VI</span>sion"
+        },
+        {
+            "id": "tarjetaVIContenido",
+            "contentEsp": "Nuestros expertos consultores tienen la visión para identificar oportunidades de crecimiento y mejora en tu empresa. Ayudamos a implementar cambios estratégicos y significativos que te permiten ver más allá del horizonte.",
+            "contentEng": "Our expert consultants have the vision to identify opportunities for growth and improvement in your business. We help implement strategic and meaningful changes that allow you to see beyond the horizon."
+        },
+        {
+            "id": "tarjetaBASubtitulo",
+            "contentEsp": "<span id='accentWordTitle'>BA</span>lance",
+            "contentEng": "<span id='accentWordTitle'>BA</span>lance"
+        },
+        {
+            "id": "tarjetaBAContenido",
+            "contentEsp": "En Reviba, sabemos que el equilibrio entre las diversas áreas y funciones de tu empresa es esencial para el éxito a largo plazo. Nos enfocamos en asegurar un equilibrio entre la eficiencia operativa, la satisfacción del cliente, la innovación y la sostenibilidad financiera.",
+            "contentEng": "At Reviba, we know that balance among the various areas and functions of your business is key to long-term success. We focus on ensuring a balance between operational efficiency, customer satisfaction, innovation, and financial sustainability."
+        },
+        {
+            "id": "ultimaLlamadaTitulo",
+            "contentEsp": "<span class='accentBlueOne'>Re</span>inicia, <span class='accentBlueOne'>Re</span>imagina, <span class='accentBlueOne'>Re</span>vive con Reviba",
+            "contentEng": "<span class='accentBlueOne'>Re</span>start, <span class='accentBlueOne'>Re</span>think, <span class='accentBlueOne'>Re</span>vive with Reviba"
+        },
+        {
+            "id": "ultimaLlamadaContent1",
+            "contentEsp": "Elige relevancia, visión y equilibrio en tu camino hacia el éxito. Nuestra consultoría personalizada te proporciona las respuestas y soluciones que necesitas.",
+            "contentEng": "Choose relevance, vision, and balance on your path to success. Our tailor-made consulting provides you with the answers and solutions you need."
+        },
+        {
+            "id": "ultimaLlamadaBoton",
+            "contentEsp": "Comienza tu Transformación Ahora",
+            "contentEng": "Start Your Transformation Now"
+        },
+        {
+            "id": "ultimaLlamadaContent2",
+            "contentEsp": "Superar tus desafíos y alcanzar tus metas es posible con Reviba. No esperes más, inicia tu viaje hacia la transformación y el crecimiento.",
+            "contentEng": "Overcoming your challenges and reaching your goals is possible with Reviba. Don't wait any longer, start your journey towards transformation and growth."
+        },
+        {
+            "id": "contactoUbicacion",
+            "contentEsp": "CDMX / Queretaro / Guanajuato",
+            "contentEng": "CDMX / Queretaro / Guanajuato"
+        },
+        {
+            "id": "contactoCorreo",
+            "contentEsp": "info@revibaconsultores.com",
+            "contentEng": "info@revibaconsultores.com"
         }
     ]
 }
