@@ -59,6 +59,9 @@ function changeToLight() {
     luzElems.forEach( (elem) => {
         elem.style.display = 'block';
     });
+
+    document.getElementById('section7ImageForDark').style.display = 'none';
+    document.getElementById('section7ImageForLight').style.display = 'block';
 }
 
 function changeToDark() {
@@ -77,6 +80,9 @@ function changeToDark() {
     oscElems.forEach( (elem) => {
         elem.style.display = 'block';
     });
+    
+    document.getElementById('section7ImageForDark').style.display = 'block';
+    document.getElementById('section7ImageForLight').style.display = 'none';
 }
 
 function loadHeader(values) {

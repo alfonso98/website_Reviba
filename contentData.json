@@ -55,8 +55,8 @@
     "pageContent": [
         {
             "id": "coverActionsText1",
-            "contentEsp" : "¡<span class='accentBlueOne'>Re</span>define tus Límites! <span class='accentBlueOne'>Re</span>inventa tu Éxito Empresarial con <span class='accentBlueOne'>REVIBA</span>",
-            "contentEng": "<span class='accentBlueOne'>Re</span>define your Limits! <span class='accentBlueOne'>Re</span>invent your Business Success with <span class='accentBlueOne'>REVIBA</span>"
+            "contentEsp" : "¡<span class='accentBlueTwo'>Re</span>define tus Límites! <span class='accentBlueTwo'>Re</span>inventa tu Éxito Empresarial con <span class='accentBlueTwo'>REVIBA</span>",
+            "contentEng": "<span class='accentBlueTwo'>Re</span>define your Limits! <span class='accentBlueTwo'>Re</span>invent your Business Success with <span class='accentBlueTwo'>REVIBA</span>"
         },
         {
             "id": "coverActionsButton1",
@@ -145,8 +145,8 @@
         },
         {
             "id": "queHacemosTitle",
-            "contentEsp": "Cómo REinventamos tu Negocio",
-            "contentEng": "How we REinvent your Business"
+            "contentEsp": "Cómo <span class='accentBlueOne'>RE</span>inventamos tu Negocio",
+            "contentEng": "How we <span class='accentBlueOne'>RE</span>invent your Business"
         },
         {
             "id": "queHacemosContent1",
@@ -180,8 +180,8 @@
         },
         {
             "id": "seccionServicios1Titulo",
-            "contentEsp": "<span class='accentBlueOne'>Re</span>inventa tu Negocio con Nuestros Servicios",
-            "contentEng": "<span class='accentBlueOne'>Re</span>invent Your Business with Our Services"
+            "contentEsp": "<span class='accentBlueOne'>RE</span>inventa tu Negocio con Nuestros Servicios",
+            "contentEng": "<span class='accentBlueOne'>RE</span>invent Your Business with Our Services"
         },
         {
             "id": "seccionServicios1Content1",
@@ -219,9 +219,24 @@
             "contentEng": "Legal and Regulatory Compliance"
         },
         {
+            "id": "section7Title",
+            "contentEsp": "Nuestra <span class='accentBlueOne'>RE</span>gión, Tu Éxito",
+            "contentEng": "Our <span class='accentBlueOne'>RE</span>gion, Your Success"
+        },
+        {
+            "id": "section7Content1",
+            "contentEsp": "En Reviba, creemos en la REdefinición del éxito empresarial en cualquier rincón de México y Latinoamérica. Tu ubicación no es un obstáculo, es una oportunidad.",
+            "contentEng": "At Reviba, we believe in redefining business success in every corner of Mexico and Latin America. Your location is not an obstacle; it's an opportunity."
+        },
+        {
+            "id": "section7Boton1",
+            "contentEsp": "Contáctanos",
+            "contentEng": "Contact Us"
+        },
+        {
             "id": "diferenciadorTitulo",
-            "contentEsp": "¿Por qué REVIBA?",
-            "contentEng": "Why REVIBA?"
+            "contentEsp": "¿Por qué <span class='accentBlueOne'> REVIBA</span>?",
+            "contentEng": "Why <span class='accentBlueOne'> REVIBA</span>?"
         },
         {
             "id": "diferenciadorContenido1",
@@ -275,8 +290,8 @@
         },
         {
             "id": "ultimaLlamadaTitulo",
-            "contentEsp": "<span class='accentBlueOne'>Re</span>inicia, <span class='accentBlueOne'>Re</span>imagina, <span class='accentBlueOne'>Re</span>vive con Reviba",
-            "contentEng": "<span class='accentBlueOne'>Re</span>start, <span class='accentBlueOne'>Re</span>think, <span class='accentBlueOne'>Re</span>vive with Reviba"
+            "contentEsp": "<span class='accentBlueOne'>RE</span>inicia, <span class='accentBlueOne'>RE</span>imagina, <span class='accentBlueOne'>RE</span>vive con <span class='accentBlueOne'>REVIBA</span>",
+            "contentEng": "<span class='accentBlueOne'>RE</span>start, <span class='accentBlueOne'>RE</span>think, <span class='accentBlueOne'>RE</span>vive with <span class='accentBlueOne'>REVIBA</span>"
         },
         {
             "id": "ultimaLlamadaContent1",
