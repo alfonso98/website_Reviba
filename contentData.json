@@ -194,9 +194,19 @@
             "contentEng": "Strategic Consulting"
         },
         {
+            "id": "tarjetaServicios1Content",
+            "contentEsp": "Transformamos tu propuesta de valor y alineamos todos tus recursos hacia tus objetivos. Ayudamos en la planificación, organización y toma de decisiones.",
+            "contentEng": "We transform your value proposition and align all your resources towards your objectives. We assist in planning, organizing, and decision-making."
+        },
+        {
             "id": "tarjetaServicios2Titulo",
             "contentEsp": "Consultoría comercial (Tailor-made)",
             "contentEng": "Business Consulting (Tailor-made) "
+        },
+        {
+            "id": "tarjetaServicios2Content",
+            "contentEsp": "Potenciamos tus ingresos, al redefinir tu estrategia comercial para optimizar la captación y fidelización de clientes, permitiéndote superar tus expectativas financieras y adaptarte a los desafíos del mercado actual.",
+            "contentEng": "We boost your revenue by redefining your commercial strategy to optimize client acquisition and retention, enabling you to exceed your financial expectations and adapt to the challenges of the current market."
         },
         {
             "id": "tarjetaServicios3Titulo",
@@ -204,9 +214,19 @@
             "contentEng": "Commercial Network and Influence Expansion"
         },
         {
+            "id": "tarjetaServicios3Content",
+            "contentEsp": "Expandimos tus horizontes hacia nuevos mercados y socios estratégicos, aprovechando nuestra red de especialistas en la industria que necesites.",
+            "contentEng": "We expand your horizons towards new markets and strategic partners, taking advantage of our network of specialists in the industry you need."
+        },
+        {
             "id": "tarjetaServicios4Titulo",
             "contentEsp": "Gestión de Riesgos",
             "contentEng": "Risk Management"
+        },
+        {
+            "id": "tarjetaServicios4Content",
+            "contentEsp": "Evaluamos y gestionamos tus riesgos empresariales, incluyendo los riesgos financieros, operativos y de reputación, para adaptarte a cualquier cambio o desafío.",
+            "contentEng": "We evaluate and manage your business risks, including financial, operational, and reputation risks, to adapt to any change or challenge."
         },
         {
             "id": "tarjetaServicios5Titulo",
@@ -214,9 +234,19 @@
             "contentEng": "Digital Transformation"
         },
         {
+            "id": "tarjetaServicios5Content",
+            "contentEsp": "Ayudamos a tu empresa a adaptarse a la era digital, utilizando la tecnología y la información como aliados para descubrir y aprovechar nuevas oportunidades de mercado.",
+            "contentEng": "We help your company adapt to the digital age, using technology and information as allies to discover and seize new market opportunities."
+        },
+        {
             "id": "tarjetaServicios6Titulo",
             "contentEsp": "Cumplimiento Legal y Regulatorio",
             "contentEng": "Legal and Regulatory Compliance"
+        },
+        {
+            "id": "tarjetaServicios6Content",
+            "contentEsp": "Brindamos orientación en asuntos legales y regulatorios, asegurándonos de que operes siempre dentro del marco legal.",
+            "contentEng": "We provide guidance on legal and regulatory matters, ensuring that you always operate within the legal framework."
         },
         {
             "id": "section7Title",
