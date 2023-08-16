@@ -1396,7 +1396,7 @@ footer {
     }
     
     #nosotrosTxt h2 {
-        text-align: center;
+        text-align: left;
         font: italic normal bold 5rem/6.5rem Figtree;
         margin: 0rem 0rem;
         overflow-x: clip;
@@ -1404,7 +1404,7 @@ footer {
 
     #nosotrosTxt p {
         font: normal normal normal 2.5rem/3rem Figtree;
-        text-align: justify;
+        text-align: left;
     }
     
     #socios {
@@ -1423,7 +1423,7 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
-        text-align: justify;
+        text-align: left;
     }
 
     .fotoSocio {
@@ -1548,6 +1548,7 @@ footer {
         min-height: 80vh;
         display: grid;
         grid-template: 1fr 10fr / 1fr 1fr;
+        margin-bottom: 5vh;
     }
     
     #queHacemos .tituloDeSeccion {
@@ -1569,7 +1570,7 @@ footer {
 
     #productoEstrella {
         min-height: 100vh;
-        padding-top: 3vh;
+        padding-top: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1635,7 +1636,7 @@ footer {
 
     #mercado {
         margin: 0px 0px;
-        padding-top: 0rem;
+        padding-top: 10vh;
         min-height: 60vh;
         display: flex;
         flex-direction: column;
