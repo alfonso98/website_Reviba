@@ -100,13 +100,21 @@ function loadHeader(values) {
 
 function loadContentEsp(content) {
     content.forEach( (contentItem) => {
-        document.getElementById(contentItem.id).innerHTML = contentItem.contentEsp;
+
+        if(document.getElementById(contentItem.id)){
+            document.getElementById(contentItem.id).innerHTML = contentItem.contentEsp;
+        }
+        
     });
 }
 
 function loadContentEng(content) {
     content.forEach( (contentItem) => {
-        document.getElementById(contentItem.id).innerHTML = contentItem.contentEng;
+
+        if(document.getElementById(contentItem.id)){
+            document.getElementById(contentItem.id).innerHTML = contentItem.contentEng;
+        }
+
     });
 }
 
