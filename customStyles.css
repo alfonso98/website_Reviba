@@ -1928,3 +1928,15 @@ footer {
     }
 
 }
+
+*:lang(en) {
+
+    .idiomaEng {
+        display: block;
+    }
+
+    .idiomaEsp {
+        display: none;
+    }
+
+}

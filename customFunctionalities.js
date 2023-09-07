@@ -106,6 +106,7 @@ function loadContentEsp(content) {
         }
         
     });
+    document.documentElement.setAttribute("lang", 'es');
 }
 
 function loadContentEng(content) {
@@ -116,6 +117,7 @@ function loadContentEng(content) {
         }
 
     });
+    document.documentElement.setAttribute("lang", 'en');
 }
 
 function loadData(isEsp) {
@@ -134,4 +136,14 @@ function loadData(isEsp) {
     });
 }
 
-loadData(true);
+window.onload = function() {
+
+    var ln = window.navigator.language||navigator.browserLanguage;
+  
+    if(ln == 'en'){
+        loadData(false);
+    }else {
+      loadData(true);
+    }
+
+}
